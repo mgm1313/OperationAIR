@@ -9,7 +9,7 @@ function Layout({ children }) {
     <div className="relative flex flex-col font-sans min-h-screen text-gray-900">
       <Header />
 
-      <main className="flex flex-col flex-1 md:justify-center mx-auto px-4 py-8 md:p-8 w-full">
+      <main className="flex flex-col flex-1 md:justify-center mx-auto px-4 py-4 lg:py-8 md:p-8 w-full">
         {children}
       </main>
 

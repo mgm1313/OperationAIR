@@ -1,23 +1,13 @@
 // import { Link } from "gatsby";
 import React, { useState } from "react";
-import { CSSTransition } from "react-transition-group";
+import { Link } from "gatsby";
+
+import Transition from "./utils/transition";
 
 import headerLogoNegative from "../images/logo-negative.svg";
+import siteData from "../content/site.yml";
 
-const menuItems = [
-  {
-    route: `/`,
-    title: `Het Team`
-  },
-  {
-    route: `/`,
-    title: `Blog`
-  },
-  {
-    route: `/`,
-    title: `Pers`
-  }
-];
+const menuItems = siteData.menu;
 
 function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -28,13 +18,13 @@ function Header() {
         <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6">
           <div className="flex items-center flex-1">
             <div className="flex items-center justify-between w-full md:w-auto">
-              <a href="/">
+              <Link to="/">
                 <img
                   className="h-8 md:h-12 w-auto"
                   src={headerLogoNegative}
                   alt="Operation AIR logo"
                 />
-              </a>
+              </Link>
               <div className="-mr-2 flex items-center md:hidden">
                 <button
                   onClick={() => setIsExpanded(true)}
@@ -59,26 +49,28 @@ function Header() {
             </div>
             <div className="hidden md:block md:ml-10">
               {menuItems.map((link, index) => (
-                <a
+                <Link
                   key={index}
-                  href={link.route}
+                  to={link.route}
+                  partiallyActive={true}
+                  activeClassName="underline"
                   className={`${index >= 1 &&
-                    `ml-10`} font-medium text-gray-50 hover:text-gray-300 focus:outline-none focus:text-gray-300 transition duration-150 ease-in-out`}
+                    `ml-2 lg:ml-4`} inline-block rounded-lg leading-none py-2 px-3 font-medium text-gray-50 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
                 >
                   {link.title}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
           <div className="hidden md:block text-right">
             <span className="inline-flex rounded-md shadow-md">
               <span className="inline-flex rounded-md shadow-xs">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                 >
                   Contact
-                </a>
+                </Link>
               </span>
             </span>
           </div>
@@ -90,24 +82,25 @@ function Header() {
           isExpanded ? `block` : `hidden`
         } absolute top-0 inset-x-0 p-2 md:hidden`}
       >
-        <CSSTransition
-          in={isExpanded}
-          timeout={{
-            enter: 150,
-            exit: 100
-          }}
-          classNames="mobile-menu"
+        <Transition
+          show={isExpanded}
+          enter="duration-150 ease-out"
+          enterFrom="opacity-0 scale-95"
+          enterTo="opacity-100 scale-100"
+          leave="duration-100 ease-in"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-95"
         >
           <div className="rounded-lg shadow-md transition transform origin-top-right">
             <div className="rounded-lg bg-japanese shadow-xs overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-between">
-                <a href="/">
+                <Link to="/">
                   <img
                     className="h-8 w-auto"
                     src={headerLogoNegative}
                     alt="Operation AIR logo"
                   />
-                </a>
+                </Link>
                 <div className="-mr-2">
                   <button
                     onClick={() => setIsExpanded(false)}
@@ -143,16 +136,16 @@ function Header() {
                 ))}
               </div>
               <div>
-                <a
-                  href="/"
+                <Link
+                  href="/contact"
                   className="block w-full px-5 py-3 text-center font-medium text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out"
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
-        </CSSTransition>
+        </Transition>
       </div>
     </header>
   );

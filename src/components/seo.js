@@ -74,7 +74,15 @@ function SEO({ description, lang, meta, keywords, title }) {
 
 SEO.defaultProps = {
   lang: `nl`,
-  keywords: [`operationAIR`, `ventilation`, `respiration`, `medical`, `TUDelft`, `Corona`, `virus`],
+  keywords: [
+    `operationAIR`,
+    `ventilation`,
+    `respiration`,
+    `medical`,
+    `TUDelft`,
+    `Corona`,
+    `virus`
+  ],
   meta: []
 };
 

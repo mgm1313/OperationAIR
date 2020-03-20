@@ -1,16 +1,105 @@
 import React from "react";
+import { Link, useStaticQuery, graphql } from "gatsby";
+
+import Img from "gatsby-image";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import lumc from "../images/partners/lumc.svg";
-import erasmus from "../images/partners/erasmus.png";
-import tuDelft from "../images/partners/tudelft.svg";
+import ReactPlayer from "react-player";
+
+import toHTML from "../utils/md2html";
 
 function IndexPage() {
+  const data = useStaticQuery(graphql`
+    {
+      homepageYaml {
+        title
+        introduction {
+          brand
+          mission
+          subtitle
+          text
+          button1 {
+            link
+            title
+          }
+          button2 {
+            link
+            title
+          }
+          video {
+            subtitle
+            youtubeID
+          }
+        }
+        blog {
+          title
+          introduction
+        }
+        partners {
+          button1 {
+            link
+            title
+          }
+          button2 {
+            link
+            title
+          }
+          content
+          title
+          logo_s {
+            title
+            url
+            image {
+              childImageSharp {
+                fluid(maxHeight: 96) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+              publicURL
+              extension
+            }
+          }
+        }
+      }
+      allFile(
+        filter: {
+          sourceInstanceName: { eq: "blog" }
+          internal: { mediaType: { eq: "text/markdown" } }
+        }
+        sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
+        limit: 3
+      ) {
+        edges {
+          node {
+            childMarkdownRemark {
+              excerpt(format: PLAIN, truncate: true, pruneLength: 180)
+              frontmatter {
+                date(formatString: "DD MMM YYYY", locale: "nl-NL")
+                title
+                featuredImg {
+                  childImageSharp {
+                    fluid(maxWidth: 768) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+                slug
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const pageContent = data.homepageYaml;
+  const blogPosts = data.allFile.edges;
+
   return (
     <Layout>
-      <SEO keywords={[`operationAIR`]} title="We are OperationAIR" />
+      <SEO keywords={[`technical`, `medicine`]} title={pageContent.title} />
 
       <section className="-mt-8">
         <div className="relative bg-white overflow-hidden">
@@ -62,64 +151,41 @@ function IndexPage() {
               <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                 <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
                   <div className="text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-                    Onze Missie
+                    {pageContent.introduction.subtitle}
                   </div>
                   <h2 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
-                    Assist in respiration{` `}
-                    <br className="hidden md:inline" />
-                    <span className="text-ucla">OperationAIR</span>
+                    <span className="normal-case">
+                      {pageContent.introduction.brand}
+                    </span>
+                    {` `}
+                    <br />
+                    <span className="text-3xl sm:text-5xl lg:text-4xl xl:text-5xl text-ucla">
+                      {pageContent.introduction.mission}
+                    </span>
                   </h2>
-                  <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                    Ons studententeam van de TUDelft ontwikkelt op dit moment
-                    een <b>simpel</b> & <b>betaalbaar</b>{" "}
-                    <a
-                      href="https://nl.wikipedia.org/wiki/Beademingsapparaat"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <abbr title="Een medisch apparaat dat een patiënt die niet of slecht zelfstandig kan ademen kunstmatig van zuurstof of een mengsel van lucht en zuurstof voorziet.">
-                        beademingsapparaat
-                      </abbr>
-                    </a>{" "}
-                    om in te zetten bij de behandeling van{" "}
-                    <a
-                      href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <abbr title="In de regio Wuhan in China startte in december 2019 een uitbraak van een nieuw coronavirus. De meeste patiënten met dit virus hebben koorts en luchtwegklachten.">
-                        Coronapatiënten
-                      </abbr>
-                    </a>
-                    .
-                  </p>
-                  <div className="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                    <p className="text-base font-medium text-gray-900">
-                      Blijf op de hoogte van onze ontwikkelingen.
-                    </p>
-                    <form action="#" method="POST" className="mt-3 sm:flex">
-                      <input
-                        aria-label="Email"
-                        className="appearance-none block w-full px-3 py-3 border border-gray-300 text-base leading-6 rounded-md placeholder-gray-500 shadow-sm focus:outline-none focus:placeholder-gray-400 focus:shadow-outline focus:border-blue-300 transition duration-150 ease-in-out sm:flex-1"
-                        placeholder="Vul uw mailadres in"
-                      />
-                      <button
-                        type="submit"
-                        className="mt-3 w-full px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-japanese shadow-sm hover:bg-ucla focus:outline-none focus:shadow-outline active:bg-gray-900 transition duration-150 ease-in-out sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+                  <div
+                    className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
+                    dangerouslySetInnerHTML={{
+                      __html: toHTML(pageContent.introduction.text)
+                    }}
+                  ></div>
+                  <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                    <div className="rounded-md shadow">
+                      <Link
+                        to={pageContent.introduction.button1.link}
+                        className="w-full flex items-center justify-center px-8 py-3 no-underline font-normal border border-transparent text-base leading-6 font-medium rounded-md text-white bg-japanese hover:text-japanese hover:bg-air-gray focus:outline-none focus:shadow-outline transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                       >
-                        Inschrijven
-                      </button>
-                    </form>
-                    <p className="mt-3 text-sm leading-5 text-gray-500">
-                      Wij geven om uw persoonlijke data. Lees hoe in onze{` `}
-                      <a
-                        href="#"
-                        className="font-medium text-gray-900 underline"
+                        {pageContent.introduction.button1.title}
+                      </Link>
+                    </div>
+                    <div className="mt-3 sm:mt-0 sm:ml-3">
+                      <Link
+                        to={pageContent.introduction.button2.link}
+                        className="w-full flex items-center justify-center px-8 py-3 no-underline font-normal border border-transparent text-base leading-6 font-medium rounded-md text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                       >
-                        Privacy Voorwaarden
-                      </a>
-                      .
-                    </p>
+                        {pageContent.introduction.button2.title}
+                      </Link>
+                    </div>
                   </div>
                 </div>
                 <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
@@ -163,30 +229,43 @@ function IndexPage() {
                       fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)"
                     />
                   </svg>
-                  <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-                    <button className="relative block w-full rounded-lg overflow-hidden focus:outline-none focus:shadow-outline">
-                      <img
-                        className="w-full"
-                        src="https://images.unsplash.com/photo-1555708982-8645ec9ce3cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                        alt="Lungs"
-                      />
-                      <div className="absolute inset-0 w-full h-full flex items-center justify-center">
-                        <svg
-                          className="h-20 w-20 text-japanese"
-                          fill="currentColor"
-                          viewBox="0 0 84 84"
-                        >
-                          <circle
-                            opacity="0.9"
-                            cx="42"
-                            cy="42"
-                            r="42"
-                            fill="white"
-                          />
-                          <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
-                        </svg>
+                  <div className="mx-auto w-full lg:max-w-md">
+                    <div className="relative rounded-lg shadow-lg w-full">
+                      <div style={{ paddingTop: `56.25%` }}>
+                        <ReactPlayer
+                          url={
+                            "https://youtu.be/" +
+                            pageContent.introduction.video.youtubeID
+                          }
+                          light
+                          controls
+                          playIcon={
+                            <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+                              <svg
+                                className="h-20 w-20 text-japanese"
+                                fill="currentColor"
+                                viewBox="0 0 84 84"
+                              >
+                                <circle
+                                  opacity="0.9"
+                                  cx="42"
+                                  cy="42"
+                                  r="42"
+                                  fill="white"
+                                />
+                                <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
+                              </svg>
+                            </div>
+                          }
+                          className="absolute inset-0"
+                          width="100%"
+                          height="100%"
+                        />
                       </div>
-                    </button>
+                    </div>
+                    <p className="relative text-gray-500 lg:text-gray-400 text-xs italic">
+                      {pageContent.introduction.video.subtitle}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -198,171 +277,79 @@ function IndexPage() {
       <section className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="mb-8 text-center">
           <h2 className="text-2xl">De laatste ontwikkelingen</h2>
-          <p className="max-w-lg mx-auto">Via onze blog houden we jullie op de hoogte van de laatste ontwikkelingen. Bekijk ons <a className="underline" href="/">archief</a> voor het complete overzicht.</p>
+          <div
+            className="max-w-lg mx-auto"
+            dangerouslySetInnerHTML={{
+              __html: toHTML(pageContent.blog.introduction)
+            }}
+          ></div>
         </div>
-        <div className="sm:grid sm:grid-cols-2 sm:gap-4 md:gap-6 md:grid-cols-3">
-          <a href="/" className="group">
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <div className="relative pb-7/12 overflow-hidden">
-                <img
-                  className="absolute h-full w-full object-cover transition duration-500 ease-in-out transform group-hover:scale-105"
-                  src="https://d1rkab7tlqy5f1.cloudfront.net/_processed_/8/a/csm_IMG_0620_add8881333.jpg"
-                  alt="Lungs"
-                />
-              </div>
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2 transition duration-200 ease-in-out group-hover:text-teal-600">
-                  Werkend prototype gepresenteerd
-                </div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div className="px-6 py-4 flex justify-between">
-                <div className="flex-1 flex items-center">
-                  <svg
-                    className="flex-shrink-0 h-5 w-5 text-gray-400"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+        <div className="sm:grid sm:grid-cols-2 sm:gap-4 md:gap-6 lg:grid-cols-3">
+          {blogPosts.map((edge, index) => {
+            const post = edge.node.childMarkdownRemark.frontmatter;
+
+            return (
+              <Link
+                key={post.slug}
+                to={`/ontwikkelingen/${post.slug}`}
+                className={`block group no-underline font-normal ${index >= 1 &&
+                  `mt-4 sm:mt-0`}`}
+              >
+                <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
+                  <div className="relative pb-7/12 overflow-hidden">
+                    <div className="absolute overflow-hidden inset-0">
+                      <Img
+                        className="max-h-full w-full transition duration-500 ease-in-out transform group-hover:scale-105"
+                        fluid={post.featuredImg.childImageSharp.fluid}
+                        alt="Featured image"
+                      />
+                    </div>
+                  </div>
+                  <div className="px-6 py-4">
+                    <div className="font-bold text-xl mb-2 transition duration-200 leading-tight ease-in-out group-hover:text-teal-600">
+                      {post.title}
+                    </div>
+                    <p className="text-gray-600 text-base">
+                      {edge.node.childMarkdownRemark.excerpt}
+                    </p>
+                  </div>
+                  <div className="px-6 pb-4 flex justify-between">
+                    <div className="flex-1 flex items-center">
+                      <svg
+                        className="flex-shrink-0 h-4 lg:h-5 w-4 lg:w-5 text-gray-400"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      <span className="ml-1 lg:ml-2 flex-1 text-gray-400 leading-none">
+                        {post.date}
+                      </span>
+                    </div>
+                    <svg
+                      className="ml-4 h-5 w-5 text-gray-400 transition duration-500 ease-in-out transform group-hover:scale-110 group-hover:text-gray-700"
+                      fill="none"
                       stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                  <span className="ml-2 flex-1 text-gray-600 leading-none">
-                    Vandaag
-                  </span>
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </div>
                 </div>
-                <svg
-                  className="ml-4 h-5 w-5 text-gray-400 transition duration-500 ease-in-out transform group-hover:scale-110 group-hover:text-gray-700"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </div>
-            </div>
-          </a>
-          <a href="/" className="group">
-            <div className="max-w-sm rounded overflow-hidden shadow-lg mt-4 sm:mt-0">
-              <div className="relative pb-7/12 overflow-hidden">
-                <img
-                  className="absolute h-full w-full object-cover transition duration-500 ease-in-out transform group-hover:scale-105"
-                  src="https://images.unsplash.com/photo-1584206863432-4d63ac30e7ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=650&q=80"
-                  alt="Lungs"
-                />
-              </div>
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2 transition duration-200 ease-in-out group-hover:text-teal-600">
-                  Eerste contacten zijn gelegd
-                </div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div className="px-6 py-4 flex justify-between">
-                <div className="flex-1 flex items-center">
-                  <svg
-                    className="flex-shrink-0 h-5 w-5 text-gray-400"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                  <span className="ml-2 flex-1 text-gray-600 leading-none">
-                    Gisteren
-                  </span>
-                </div>
-                <svg
-                  className="ml-4 h-5 w-5 text-gray-400 transition duration-500 ease-in-out transform group-hover:scale-110 group-hover:text-gray-700"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </div>
-            </div>
-          </a>
-          <a href="/" className="group">
-            <div className="max-w-sm rounded overflow-hidden shadow-lg mt-4 sm:mt-0">
-              <div className="relative pb-7/12 overflow-hidden">
-                <img
-                  className="absolute h-full w-full object-cover transition duration-500 ease-in-out transform group-hover:scale-105"
-                  src="https://images.unsplash.com/photo-1555708982-8645ec9ce3cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=650&q=80"
-                  alt="Lungs"
-                />
-              </div>
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2 transition duration-200 ease-in-out group-hover:text-teal-600">
-                  OperationAIR is gestart!
-                </div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div className="px-6 py-4 flex justify-between">
-                <div className="flex-1 flex items-center">
-                  <svg
-                    className="flex-shrink-0 h-5 w-5 text-gray-400"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                  <span className="ml-2 flex-1 text-gray-600 leading-none">
-                    Maandag 16 maart
-                  </span>
-                </div>
-                <svg
-                  className="ml-4 h-5 w-5 text-gray-400 transition duration-500 ease-in-out transform group-hover:scale-110 group-hover:text-gray-700"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </div>
-            </div>
-          </a>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
@@ -372,120 +359,64 @@ function IndexPage() {
             <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div>
                 <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-                  Een brede samenwerking
+                  {pageContent.partners.title}
                 </h2>
-                <p className="mt-3 max-w-3xl text-lg leading-7 text-gray-500">
-                  Om de ontwikkeling van het beademingsapparaat te optimaliseren
-                  staat het team in nauw contact met verschillende bedrijven en
-                  instanties. Waaronder intensivisten en technisch
-                  geneeskundigen uit het Leids Universitair Medisch Centrum
-                  (LUMC) en het Erasmus Medisch Centrum (EMC).
-                </p>
+                <div
+                  className="mt-3 max-w-3xl text-lg leading-7 text-gray-500"
+                  dangerouslySetInnerHTML={{
+                    __html: toHTML(pageContent.partners.content)
+                  }}
+                ></div>
                 <div className="mt-8 sm:flex">
                   <div className="rounded-md shadow">
-                    <a
-                      href="/"
-                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-japanese hover:text-japanese hover:bg-air-gray focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                    <Link
+                      to={pageContent.partners.button1.link}
+                      className="flex items-center justify-center px-5 py-3 no-underline font-normal border border-transparent text-base leading-6 font-medium rounded-md text-white bg-japanese hover:text-japanese hover:bg-air-gray focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                     >
-                      Expert support
-                    </a>
+                      {pageContent.partners.button1.title}
+                    </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <a
-                      href="/contact"
-                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out"
+                    <Link
+                      to={pageContent.partners.button2.link}
+                      className="flex items-center justify-center px-5 py-3 no-underline font-normal border border-transparent text-base leading-6 font-medium rounded-md text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out"
                     >
-                      Contact opnemen
-                    </a>
+                      {pageContent.partners.button2.title}
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <img
-                    className="max-h-12"
-                    src={tuDelft}
-                    alt="Technische Universiteit Delft"
-                  />
-                </div>
-                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <img
-                    className="max-h-12"
-                    src={lumc}
-                    alt="Leids Universitair Medisch Centrum"
-                  />
-                </div>
-                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <img className="max-h-12" src={erasmus} alt="Erasmus MC." />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                {pageContent.partners.logo_s.map(partner => {
+                  const logo = partner.image;
 
-      <section>
-        <div className="bg-white">
-          <div className="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 sm:px-6 lg:pt-20 lg:pb-28 lg:px-8">
-            <h2 className="text-3xl leading-9 font-extrabold text-gray-900">
-              Veelgestelde vragen
-            </h2>
-            <div className="mt-6 border-t-2 border-gray-100 pt-10">
-              <dl className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <div>
-                    <dt className="text-lg leading-6 font-medium text-gray-900">
-                      Wat is het grootste gevaar in de woestijn?
-                    </dt>
-                    <dd className="mt-2">
-                      <p className="text-base leading-6 text-gray-500">
-                        Verdrinking! In de woestijn regent het haast nooit, maar
-                        als het regent dan regent het zeer hevig. Dan storten
-                        zich enorme hoeveelheden water in dalen, op
-                        nietsvermoedende mensen die zich daar net bevinden. Deze
-                        verzwelgen iedereen die geen tijd meer heeft om te
-                        vluchten.
-                      </p>
-                    </dd>
-                  </div>
-                  <div className="mt-12">
-                    <dt className="text-lg leading-6 font-medium text-gray-900">
-                      How do you make holy water?
-                    </dt>
-                    <dd className="mt-2">
-                      <p className="text-base leading-6 text-gray-500">
-                        You boil the hell out of it. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Quas cupiditate laboriosam
-                        fugiat.
-                      </p>
-                    </dd>
-                  </div>
-                </div>
-                <div className="mt-12 md:mt-0">
-                  <div>
-                    <dt className="text-lg leading-6 font-medium text-gray-900">
-                      What is the least spoken language in the world?
-                    </dt>
-                    <dd className="mt-2">
-                      <p className="text-base leading-6 text-gray-500">
-                        Sign language. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Quas cupiditate laboriosam fugiat.
-                      </p>
-                    </dd>
-                  </div>
-                  <div className="mt-12">
-                    <dt className="text-lg leading-6 font-medium text-gray-900">
-                      What do you call someone with no body and no nose?
-                    </dt>
-                    <dd className="mt-2">
-                      <p className="text-base leading-6 text-gray-500">
-                        Nobody knows. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Quas cupiditate laboriosam fugiat.
-                      </p>
-                    </dd>
-                  </div>
-                </div>
-              </dl>
+                  return (
+                    <a
+                      key={partner.title}
+                      href={partner.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="col-span-1 flex justify-center py-8 px-8 bg-gray-50"
+                    >
+                      {// https://github.com/gatsbyjs/gatsby/issues/10297#issuecomment-464834529
+                      logo.extension == "svg" && !logo.childImageSharp ? (
+                        <img
+                          className="max-h-12"
+                          src={logo.publicURL}
+                          alt={partner.title}
+                        />
+                      ) : (
+                        <Img
+                          className="max-h-12 w-full"
+                          imgStyle={{ objectFit: "contain" }}
+                          fluid={logo.childImageSharp.fluid}
+                          alt={partner.title}
+                        />
+                      )}
+                    </a>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

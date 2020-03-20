@@ -1,29 +1,58 @@
 /* purgecss start ignore */
 @tailwind base;
 
+h1 {
+  @apply leading-tight text-2xl uppercase font-extrabold;
+}
 h2 {
-    @apply uppercase font-bold text-xl;
+  @apply mt-6 uppercase font-bold leading-tight text-base;
+}
+h3 {
+  @apply mt-4 font-semibold;
+}
+main p {
+  @apply mt-2 leading-relaxed text-gray-600;
+}
+main a {
+  @apply font-semibold underline;
+}
+main .gatsby-resp-image-figcaption {
+  @apply mt-2 text-gray-400 text-sm italic text-center;
+}
+main .markdown-content ol {
+  @apply list-decimal list-inside;
+}
+main .markdown-content ul {
+  @apply list-disc list-inside;
+}
+main .markdown-content li {
+  @apply mt-4;
+}
+main .markdown-content li:first-child {
+  @apply mt-2;
+}
+
+@screen md {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply mt-8 text-lg;
+  }
+  p {
+    @apply mt-4;
+  }
+}
+
+@screen lg {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
 }
 
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
-
-.mobile-menu-enter {
-  opacity: 0;
-  transform: scale(0.95);
-}
-.mobile-menu-enter-active {
-  opacity: 1;
-  transform: scale(1);
-  transition: all 150ms ease-in;
-}
-.mobile-menu-exit {
-  opacity: 1;
-  transform: scale(1);
-}
-.mobile-menu-exit-active {
-  opacity: 0;
-  transform: scale(0.95);
-  transition: all 100ms ease-in;
-}
