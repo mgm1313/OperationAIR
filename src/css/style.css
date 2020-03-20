@@ -1,0 +1,29 @@
+/* purgecss start ignore */
+@tailwind base;
+
+h2 {
+    @apply uppercase font-bold text-xl;
+}
+
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+.mobile-menu-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.mobile-menu-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 150ms ease-in;
+}
+.mobile-menu-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.mobile-menu-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 100ms ease-in;
+}
