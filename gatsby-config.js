@@ -97,7 +97,8 @@ module.exports = {
             extensions: ["js", "ts", "jsx", "tsx", "md", "mdx"]
           }
         ],
-        purgeOnly: [`src/css/style.css`]
+        purgeOnly: [`src/css/style.css`],
+        whitelist: [`gatsby-resp-image-figcaption`]
       }
     },
     `gatsby-plugin-catch-links`,
