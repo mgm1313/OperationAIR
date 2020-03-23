@@ -48,10 +48,10 @@ collections:
               widget: "object",
               fields:
                 [
-                  { label: "Title Menu Left", name: "title", widget: "string" },
+                  { label: "Title Menu Left", name: "titleLeft", widget: "string" },
                   { 
                     label: "Menu Items left", 
-                    name: "menuLeft", 
+                    name: "itemsLeft", 
                     widget: "list",
                     fields:
                       [
@@ -59,10 +59,10 @@ collections:
                         { label: "Link URL", name: "route", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
                       ],
                   },
-                  { label: "Title Menu Right", name: "title", widget: "string" },
+                  { label: "Title Menu Right", name: "titleRight", widget: "string" },
                   { 
                     label: "Menu Items Right", 
-                    name: "menuLeft", 
+                    name: "itemsRight", 
                     widget: "list",
                     fields:
                       [
