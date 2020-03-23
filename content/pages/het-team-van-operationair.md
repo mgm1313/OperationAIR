@@ -8,10 +8,13 @@ seo:
     team is opgezet door prof. dr. ir. Jaap Harlaar, opleidingsdirecteur van
     Technical Medicine, samen met studenten Technical Medicine.
 ---
-![](/assets/operationair-group.jpg "Team OperationAIR")
+
 
 # Het team
 
+![](/assets/operationair-group.jpg "Team OperationAIR")
+
+\
 OperationAIR is een non-profit studententeam bestaande uit 35 studenten. Het team is opgezet door prof. dr. ir. Jaap Harlaar, opleidingsdirecteur van Technical Medicine, samen met studenten Technical Medicine. Inmiddels is het team uitgebreid met studenten van andere studierichtingen waaronder Biomedical Engineering, Industrieel Ontwerpen en Technische Natuurkunde. Alle leden van OperationAIR werken op vrijwilligersbasis zonder bijkomende belangen.
 
 ## Subteams
