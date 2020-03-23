@@ -28,15 +28,36 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/content/pages/`,
+        path: `${__dirname}/static/assets/`,
+        name: `images`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/pages/`,
         name: `pages`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/content/blog/`,
+        path: `${__dirname}/content/blog/`,
         name: `blog`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/components/`,
+        name: `components`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/static-pages/`,
+        name: `staticPages`
       }
     },
     `gatsby-transformer-yaml`,
@@ -44,6 +65,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          "gatsby-remark-relative-images",
           {
             resolve: `gatsby-remark-images`,
             options: {

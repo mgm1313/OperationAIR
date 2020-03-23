@@ -13,61 +13,62 @@ import toHTML from "../utils/md2html";
 function IndexPage() {
   const data = useStaticQuery(graphql`
     {
-      homepageYaml {
-        title
-        introduction {
-          brand
-          mission
-          subtitle
-          text
-          button1 {
-            link
+      pageContent: file(sourceInstanceName: {eq: "staticPages"}, relativeDirectory: {eq: "homepage"}, internal: {mediaType: {eq: "text/markdown"}}) {
+        childMarkdownRemark {
+          frontmatter {
             title
-          }
-          button2 {
-            link
-            title
-          }
-          video {
-            subtitle
-            youtubeID
-          }
-        }
-        blog {
-          title
-          introduction
-        }
-        partners {
-          button1 {
-            link
-            title
-          }
-          button2 {
-            link
-            title
-          }
-          content
-          title
-          logo_s {
-            title
-            url
-            image {
-              childImageSharp {
-                fluid(maxHeight: 96) {
-                  ...GatsbyImageSharpFluid
+            introduction {
+              subtitle
+              brand
+              mission
+              text
+              button1 {
+                title
+                link
+              }
+              button2 {
+                title
+                link
+              }
+              video {
+                youtubeID
+                subtitle
+              }
+            }
+            blog {
+              title
+              introduction
+            }
+            partners {
+              title
+              content
+              button1 {
+                title
+                link
+              }
+              button2 {
+                title
+                link
+              }
+              logo_s {
+                title
+                url
+                image {
+                  childImageSharp {
+                    fluid(maxHeight: 96) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                  publicURL
+                  extension
                 }
               }
-              publicURL
-              extension
             }
           }
         }
       }
-      allFile(
-        filter: {
-          sourceInstanceName: { eq: "blog" }
-          internal: { mediaType: { eq: "text/markdown" } }
-        }
+      blogPosts: allFile(
+        filter: { sourceInstanceName: { eq: "blog" } }
         sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
         limit: 3
       ) {
@@ -85,17 +86,17 @@ function IndexPage() {
                     }
                   }
                 }
-                slug
               }
             }
+            name
           }
         }
       }
     }
   `);
 
-  const pageContent = data.homepageYaml;
-  const blogPosts = data.allFile.edges;
+  const pageContent = data.pageContent.childMarkdownRemark.frontmatter;
+  const blogPosts = data.blogPosts.edges;
 
   return (
     <Layout>
@@ -290,8 +291,8 @@ function IndexPage() {
 
             return (
               <Link
-                key={post.slug}
-                to={`/ontwikkelingen/${post.slug}`}
+                key={edge.node.name}
+                to={`/ontwikkelingen/${edge.node.name}`}
                 className={`block group no-underline font-normal ${index >= 1 &&
                   `mt-4 sm:mt-0`}`}
               >

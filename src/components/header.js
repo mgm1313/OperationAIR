@@ -1,15 +1,29 @@
 // import { Link } from "gatsby";
 import React, { useState } from "react";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 
 import Transition from "./utils/transition";
 
 import headerLogoNegative from "../images/logo-negative.svg";
-import siteData from "../content/site.yml";
-
-const menuItems = siteData.menu;
 
 function Header() {
+  const data = useStaticQuery(graphql`
+    {
+      file(sourceInstanceName: {eq: "components"}, internal: {mediaType: {eq: "text/markdown"}}, name: {eq: "header"}) {
+        childMarkdownRemark {
+          frontmatter {
+            menuItems {
+              title
+              route
+            }
+          }
+        }
+      }
+    }
+`);
+
+  const menuItems = data.file.childMarkdownRemark.frontmatter.menuItems;
+
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (

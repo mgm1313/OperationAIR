@@ -9,6 +9,7 @@ seo:
     beademingsapparaat om mogelijke tekorten op te vangen die ontstaan door de
     coronacrisis.
 ---
+
 ![Operation Air Logo](/assets/kopje_over.png)
 
 # Over OperationAIR

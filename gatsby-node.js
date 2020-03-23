@@ -1,5 +1,11 @@
 const path = require(`path`);
 
+const { fmImagesToRelative } = require("gatsby-remark-relative-images");
+
+exports.onCreateNode = ({ node }) => {
+  fmImagesToRelative(node);
+};
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
@@ -37,10 +43,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       ) {
         edges {
           node {
+            name
             childMarkdownRemark {
-              frontmatter {
-                slug
-              }
+              id
             }
           }
         }
@@ -67,13 +72,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   });
 
   articles.data.allFile.edges.forEach(({ node }) => {
-    const markdown = node.childMarkdownRemark;
-
     createPage({
-      path: `/ontwikkelingen/${markdown.frontmatter.slug}`,
+      path: `/ontwikkelingen/${node.name}`,
       component: blogTemplate,
       context: {
-        slug: markdown.frontmatter.slug
+        id: node.childMarkdownRemark.id
       }
     });
   });

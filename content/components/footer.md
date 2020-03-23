@@ -1,0 +1,6 @@
+---
+socialLinks:
+  - name: ""
+    link: ""
+    path: ""
+---

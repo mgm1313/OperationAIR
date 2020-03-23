@@ -35,9 +35,9 @@ function BlogsPage() {
                     }
                   }
                 }
-                slug
               }
             }
+            name
           }
         }
       }
@@ -66,8 +66,8 @@ function BlogsPage() {
 
             return (
               <Link
-                key={post.slug}
-                to={`/ontwikkelingen/${post.slug}`}
+                key={edge.node.name}
+                to={`/ontwikkelingen/${edge.node.name}`}
                 className={`block group no-underline font-normal ${index >= 1 &&
                   `mt-4 sm:mt-0`}`}
               >

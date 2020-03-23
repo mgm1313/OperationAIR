@@ -7,6 +7,7 @@ seo:
     In deze privacyverklaring leggen wij uit hoe wij omgaan met uw
     persoonsgegevens: welke we verzamelen en waarvoor we ze gebruiken.
 ---
+
 # Privacyverklaring
 
 OperationAIR, gevestigd aan Mekelweg 2 2628 CD Delft, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.

@@ -1,19 +1,36 @@
 // import { Link } from "gatsby";
 import React from "react";
-import { Link } from "gatsby";
+// eslint-disable-next-line no-unused-vars
+import { Link, useStaticQuery, graphql } from "gatsby";
 
 import nameLogo from "../images/naam-operationAIR.svg";
 
-import siteData from "../content/site.yml";
-const socials = siteData.socials;
+const Footer = () => {
+//   const data = useStaticQuery(graphql`
+//     {
+//       file(sourceInstanceName: {eq: "components"}, internal: {mediaType: {eq: "text/markdown"}}, name: {eq: "footer"}) {
+//         childMarkdownRemark {
+//           frontmatter {
+//             socialLinks {
+//               name
+//               link
+//               path
+//             }
+//           }
+//         }
+//       }
+//     }
+// `);
 
-const Footer = () => (
+// const socials = data.file.childMarkdownRemark.frontmatter.socialLinks;
+
+return (
   <footer className="bg-alabaster">
     <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div className="xl:grid xl:grid-cols-3 xl:gap-8">
         <div className="xl:col-span-1">
           <img className="h-24" src={nameLogo} alt="OperationAIR" />
-          {socials && (
+          {/* {socials && (
             <div className="mt-8 flex">
               {socials.map((social, index) => (
                 <a
@@ -32,7 +49,7 @@ const Footer = () => (
                 </a>
               ))}
             </div>
-          )}
+          )} */}
         </div>
         <div className="mt-12 lg:grid lg:grid-cols-2 lg:gap-8 xl:mt-0 xl:col-span-2">
           <div className="grid grid-cols-2 gap-8">
@@ -51,7 +68,7 @@ const Footer = () => (
                 </li>
                 <li className="mt-4">
                   <Link
-                    to="/faq"
+                    to="/veelgestelde-vragen"
                     className="text-base leading-6 text-gray-500 hover:text-gray-900"
                   >
                     FAQ
@@ -72,14 +89,14 @@ const Footer = () => (
                     Samenstelling
                   </Link>
                 </li>
-                {/* <li className="mt-4">
+                <li className="mt-4">
                   <Link
-                    to="#"
+                    to="/ontwikkelingen"
                     className="text-base leading-6 text-gray-500 hover:text-gray-900"
                   >
                     Blog
                   </Link>
-                </li> */}
+                </li>
                 <li className="mt-4">
                   <Link
                     to="/contact"
@@ -163,6 +180,6 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-);
+)};
 
 export default Footer;

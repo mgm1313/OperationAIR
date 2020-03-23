@@ -12,7 +12,10 @@ function Template({ data }) {
 
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <SEO
+        title={frontmatter.seo.browserTitle}
+        description={frontmatter.seo.description}
+      />
       <section className="max-w-full md:max-w-3xl mx-auto my-4 md:my-6 lg:my-12">
         <Breadcrumb title={frontmatter.slug} />
 
@@ -31,7 +34,11 @@ Template.propTypes = {
       html: PropTypes.string.isRequired,
       frontmatter: PropTypes.shape({
         title: PropTypes.string.isRequired,
-        slug: PropTypes.string.isRequired
+        slug: PropTypes.string.isRequired,
+        seo: PropTypes.shape({
+          browserTitle: PropTypes.string,
+          description: PropTypes.string
+        })
       })
     })
   })
@@ -46,6 +53,10 @@ export const pageQuery = graphql`
       frontmatter {
         title
         slug
+        seo {
+          browserTitle
+          description
+        }
       }
     }
   }
