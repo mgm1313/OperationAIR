@@ -6,14 +6,13 @@ seo:
   description: >-
     Met behulp van de MoSCoW methode heeft het team van OperationAIR het
     programma van eisen opgesteld voor de noodoplossing voor het beademen van
-    corona patiënten.
+    coronapatiënten.
 ---
+# Programma van Eisen Noodoplossing Beademing Coronapatiënten
 
-# Programma van Eisen Noodoplossing Beademing Corona Patiënten
+Met behulp van de MoSCoW methode heeft het team van OperationAIR het Programma van Eisen opgesteld voor de noodoplossing voor het beademen van coronapatiënten.
 
-Met behulp van de MoSCoW methode heeft het team van OperationAIR het programma van eisen opgesteld voor de noodoplossing voor het beademen van corona patiënten.
-
-## Programma van Eisen voor ventilatie van corona patiënten
+## Programma van Eisen voor ventilatie van coronapatiënten
 
 ### Requirements - Ventilation Settings
 
@@ -32,10 +31,10 @@ Met behulp van de MoSCoW methode heeft het team van OperationAIR het programma v
         - Adjustable settings:  
         <div class="pl-3">
           + Freq. 30/min <br />
-          + Tv 300 - 700 mL<sup>[1]</sup> <br />
+          + Tv 300 - 700 mL<sup>\[1]</sup> <br />
           + Pplat < 35 cmH2O <br />
           + Pressure controlled <br />
-          + 15cm H2O PEEP<sup>[2]</sup> <br />
+          + 15cm H2O PEEP<sup>\[2]</sup> <br />
           + FiO2 → 100% <br />
           + I:E → 1:2 <br />
           + inspiratory flow 1.5L/s
@@ -66,7 +65,7 @@ Met behulp van de MoSCoW methode heeft het team van OperationAIR het programma v
 
 ## Programma van Eisen voor het ontwerp van OperationAIR
 
-### Reuirements - Hardware
+### Requirements - Hardware
 
 <table class="mt-2 block min-w-full overflow-x-auto">
 <thead>
@@ -154,7 +153,5 @@ Met behulp van de MoSCoW methode heeft het team van OperationAIR het programma v
 ## Referenties
 
 1. Walkey AJ, Goligher EC, Del sorbo L, et al. Low Tidal Volume versus Non-Volume-Limited Strategies for Patients with Acute Respiratory Distress Syndrome. A Systematic Review and Meta-Analysis. Ann Am Thorac Soc. 2017;14(Supplement_4):S271-S279.
-
 2. Walkey AJ, Del sorbo L, Hodgson CL, et al. Higher PEEP versus Lower PEEP Strategies for Patients with Acute Respiratory Distress Syndrome. A Systematic Review and Meta-Analysis. Ann Am Thorac Soc. 2017;14(Supplement_4):S297-S303.
-
-3. Dräger Evita® Infinity® V500 Ventilator ICU Ventilation And Respiratory Monitoring. (2020). [ebook] Drager, pp.1-8. Available at: [www.draeger.com/](https://www.draeger.com/Products/Content/evita-infinity-v500-ventilator-pi-9051753-en-gb.pdf) [Accessed 17 March 2020].
+3. Dräger Evita® Infinity® V500 Ventilator ICU Ventilation And Respiratory Monitoring. (2020). \[ebook] Drager, pp.1-8. Available at: [www.draeger.com/](https://www.draeger.com/Products/Content/evita-infinity-v500-ventilator-pi-9051753-en-gb.pdf) \[Accessed 17 March 2020].
