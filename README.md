@@ -1,5 +1,6 @@
 # OperationAIR
-This repository contains the current site of the student project [OperationAIR](https://www.operationair.org/). 
+
+This repository contains the current site of the student project [OperationAIR](https://www.operationair.org/).
 Little disclaimer: This side was made in just 3 days, so there's still a lot to gain in best-practices and documentation is not yet up to date.
 
 ## 🚀 Quick start

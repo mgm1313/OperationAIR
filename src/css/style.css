@@ -1,4 +1,4 @@
-/* purgecss start ignore */
+/*! purgecss start ignore */
 @tailwind base;
 
 h1 {
@@ -54,5 +54,6 @@ main .markdown-content li:first-child {
 }
 
 @tailwind components;
-/* purgecss end ignore */
+/*! purgecss end ignore */
+
 @tailwind utilities;
