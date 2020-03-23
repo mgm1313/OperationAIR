@@ -22,13 +22,10 @@ module.exports = {
         respectDNT: true
       }
     },
-    `gatsby-plugin-netlify-cms`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/static/assets/`,
+        path: `${__dirname}/static/assets`,
         name: `images`
       }
     },
@@ -60,12 +57,16 @@ module.exports = {
         name: `staticPages`
       }
     },
-    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          "gatsby-remark-relative-images",
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: 'images',
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -80,6 +81,8 @@ module.exports = {
         ]
       }
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     "gatsby-plugin-eslint",
     `gatsby-plugin-react-helmet`,
     {
@@ -124,6 +127,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-offline`
   ]
 };
