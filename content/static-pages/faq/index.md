@@ -38,8 +38,8 @@ questions:
       intensivisten van het LUMC. Bent u hier namens een intensive care naar op
       zoek? Neem dan contact op met
       [info@operationair.org](mailto:info@operationair.org)
-  - question: "Ik wil helpen, wat kan ik doen?"
+  - question: 'Ik wil helpen, wat kan ik doen?'
     answer: >-
-      Heel fijn dat u zich wilt inzetten! Graag vragen wij u te mailen naar het
+      Heel fijn dat u zich wilt inzetten! Graag vragen wij u  het
       contactformulier in te vullen onder contact.
 ---
