@@ -22,6 +22,7 @@ module.exports = {
         respectDNT: true
       }
     },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -77,9 +78,7 @@ module.exports = {
         postCssPlugins: [
           require(`tailwindcss`)(`./tailwind.config.js`),
           require(`autoprefixer`),
-          ...process.env.NODE_ENV === 'production'
-          ? [require(`cssnano`)]
-          : []
+          ...(process.env.NODE_ENV === "production" ? [require(`cssnano`)] : [])
         ]
       }
     },
