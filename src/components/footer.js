@@ -1,28 +1,32 @@
 // import { Link } from "gatsby";
 import React from "react";
-// eslint-disable-next-line no-unused-vars
 import { Link, useStaticQuery, graphql } from "gatsby";
 
 import nameLogo from "../images/naam-operationAIR.svg";
 
 const Footer = () => {
-  //   const data = useStaticQuery(graphql`
-  //     {
-  //       file(sourceInstanceName: {eq: "components"}, internal: {mediaType: {eq: "text/markdown"}}, name: {eq: "footer"}) {
-  //         childMarkdownRemark {
-  //           frontmatter {
-  //             socialLinks {
-  //               name
-  //               link
-  //               path
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  // `);
+    const data = useStaticQuery(graphql`
+      {
+        file(sourceInstanceName: {eq: "components"}, internal: {mediaType: {eq: "text/markdown"}}, name: {eq: "footer"}) {
+          childMarkdownRemark {
+            frontmatter {
+              socialLinks {
+                name
+                link
+                path
+              }
+              footerMenu {
+                titleLeft
+                titleRight
+              }
+            }
+          }
+        }
+      }
+  `);
 
-  // const socials = data.file.childMarkdownRemark.frontmatter.socialLinks;
+  const socials = data.file.childMarkdownRemark.frontmatter.socialLinks;
+  const menu = data.file.childMarkdownRemark.frontmatter.footerMenu;
 
   return (
     <footer className="bg-alabaster">
@@ -30,7 +34,7 @@ const Footer = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="xl:col-span-1">
             <img className="h-24" src={nameLogo} alt="OperationAIR" />
-            {/* {socials && (
+            {socials && (
             <div className="mt-8 flex">
               {socials.map((social, index) => (
                 <a
@@ -43,19 +47,19 @@ const Footer = () => {
                   <svg
                     className="h-6 w-6"
                     fill="currentColor"
-                    viewBox="0 0 24 24"
+                    viewBox="0 0 20 20"
                     dangerouslySetInnerHTML={{ __html: social.path }}
                   ></svg>
                 </a>
               ))}
             </div>
-          )} */}
+          )}
           </div>
           <div className="mt-12 lg:grid lg:grid-cols-2 lg:gap-8 xl:mt-0 xl:col-span-2">
             <div className="grid grid-cols-2 gap-8">
               <div>
                 <h4 className="text-sm leading-5 font-semibold tracking-wider text-ucla uppercase">
-                  Aanpak
+                  {menu.titleLeft}
                 </h4>
                 <ul className="mt-4">
                   <li>
@@ -78,7 +82,7 @@ const Footer = () => {
               </div>
               <div>
                 <h4 className="text-sm leading-5 font-semibold tracking-wider text-ucla uppercase">
-                  Team
+                  {menu.titleRight}
                 </h4>
                 <ul className="mt-4">
                   <li>
