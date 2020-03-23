@@ -13,7 +13,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "process.env.GOOGLE_ANALYTICS_ID",
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional
@@ -77,7 +77,9 @@ module.exports = {
         postCssPlugins: [
           require(`tailwindcss`)(`./tailwind.config.js`),
           require(`autoprefixer`),
-          require(`cssnano`)
+          ...process.env.NODE_ENV === 'production'
+          ? [require(`cssnano`)]
+          : []
         ]
       }
     },
@@ -97,8 +99,7 @@ module.exports = {
             extensions: ["js", "ts", "jsx", "tsx", "md", "mdx"]
           }
         ],
-        purgeOnly: [`src/css/style.css`],
-        whitelist: [`gatsby-resp-image-figcaption`]
+        purgeOnly: [`src/css/style.css`]
       }
     },
     `gatsby-plugin-catch-links`,

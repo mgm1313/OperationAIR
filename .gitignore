@@ -12,7 +12,7 @@ yarn-error.log
 
 # deployment-specific configs
 now.json
-
+.env.*
 .now
 
 # Created by https://www.gitignore.io/api/react,macos,visualstudiocode
