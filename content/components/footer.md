@@ -7,4 +7,16 @@ socialLinks:
 footerMenu:
   titleLeft: Aanpak
   titleRight: Team
+  itemsLeft:
+    - title: Visie & Missie
+      route: /over
+    - title: FAQ
+      route: /veelgestelde-vragen
+  itemsRight:
+    - title: Samenstelling
+      route: /team
+    - title: Blog
+      route: /ontwikkelingen
+    - title: Contact
+      route: /contact
 ---
