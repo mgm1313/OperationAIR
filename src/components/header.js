@@ -9,7 +9,11 @@ import headerLogoNegative from "../images/logo-negative.svg";
 function Header() {
   const data = useStaticQuery(graphql`
     {
-      file(sourceInstanceName: {eq: "components"}, internal: {mediaType: {eq: "text/markdown"}}, name: {eq: "header"}) {
+      file(
+        sourceInstanceName: { eq: "components" }
+        internal: { mediaType: { eq: "text/markdown" } }
+        name: { eq: "header" }
+      ) {
         childMarkdownRemark {
           frontmatter {
             menuItems {
@@ -20,7 +24,7 @@ function Header() {
         }
       }
     }
-`);
+  `);
 
   const menuItems = data.file.childMarkdownRemark.frontmatter.menuItems;
 

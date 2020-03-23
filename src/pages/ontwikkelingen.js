@@ -9,11 +9,21 @@ import Breadcrumb from "../components/breadcrumb";
 
 import toHTML from "../utils/md2html";
 
-import pageData from "../content/pages/articles/articles.yml";
-
 function BlogsPage() {
   const data = useStaticQuery(graphql`
     {
+      pageContent: file(
+        sourceInstanceName: { eq: "staticPages" }
+        relativeDirectory: { eq: "blogs" }
+        internal: { mediaType: { eq: "text/markdown" } }
+      ) {
+        childMarkdownRemark {
+          frontmatter {
+            title
+            body
+          }
+        }
+      }
       allFile(
         filter: {
           sourceInstanceName: { eq: "blog" }
@@ -44,6 +54,7 @@ function BlogsPage() {
     }
   `);
 
+  const pageData = data.pageContent.childMarkdownRemark.frontmatter;
   const blogPosts = data.allFile.edges;
 
   return (
@@ -57,7 +68,7 @@ function BlogsPage() {
           <h1>{pageData.title}</h1>
           <div
             className="markdown-content"
-            dangerouslySetInnerHTML={{ __html: toHTML(pageData.introduction) }}
+            dangerouslySetInnerHTML={{ __html: toHTML(pageData.body) }}
           ></div>
         </div>
         <div className="sm:grid sm:grid-cols-2 sm:col-gap-4 sm:row-gap-6 md:col-gap-6 md:row-gap-8 lg:grid-cols-3">

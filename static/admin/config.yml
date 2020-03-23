@@ -160,6 +160,12 @@ collections:
                   { label: "Answer", name: "answer", widget: "markdown" },
                 ],
             }
+      - file: "content/static-pages/blogs/index.md"
+        label: "Blog overview page"
+        name: "blogs"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Introduction text", name: "body", widget: "markdown" },
   - name: blog
     label: Blog
     folder: content/blog

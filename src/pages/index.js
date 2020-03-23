@@ -13,7 +13,11 @@ import toHTML from "../utils/md2html";
 function IndexPage() {
   const data = useStaticQuery(graphql`
     {
-      pageContent: file(sourceInstanceName: {eq: "staticPages"}, relativeDirectory: {eq: "homepage"}, internal: {mediaType: {eq: "text/markdown"}}) {
+      pageContent: file(
+        sourceInstanceName: { eq: "staticPages" }
+        relativeDirectory: { eq: "homepage" }
+        internal: { mediaType: { eq: "text/markdown" } }
+      ) {
         childMarkdownRemark {
           frontmatter {
             title

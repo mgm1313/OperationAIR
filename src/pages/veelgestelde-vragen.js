@@ -10,7 +10,11 @@ import toHTML from "../utils/md2html";
 function FAQPage() {
   const data = useStaticQuery(graphql`
     {
-      pageContent: file(sourceInstanceName: {eq: "staticPages"}, relativeDirectory: {eq: "faq"}, internal: {mediaType: {eq: "text/markdown"}}) {
+      pageContent: file(
+        sourceInstanceName: { eq: "staticPages" }
+        relativeDirectory: { eq: "faq" }
+        internal: { mediaType: { eq: "text/markdown" } }
+      ) {
         childMarkdownRemark {
           frontmatter {
             title
@@ -23,7 +27,7 @@ function FAQPage() {
       }
     }
   `);
-  
+
   const pageData = data.pageContent.childMarkdownRemark.frontmatter;
   const questions = pageData.questions;
 
@@ -51,7 +55,9 @@ function FAQPage() {
                   <dd className="mt-2 md:mt-0 md:col-span-7">
                     <div
                       className="-mt-2 text-base leading-6 text-gray-500"
-                      dangerouslySetInnerHTML={{ __html: toHTML(question.answer) }}
+                      dangerouslySetInnerHTML={{
+                        __html: toHTML(question.answer)
+                      }}
                     ></div>
                   </dd>
                 </div>
