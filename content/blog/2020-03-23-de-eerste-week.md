@@ -1,5 +1,5 @@
 ---
-date: 2020-03-23T15:07:06.377Z
+date: 2020-03-20T15:07:06.377Z
 title: De eerste week
 featuredImg: /assets/featured.jpg
 ---
