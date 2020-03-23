@@ -145,7 +145,7 @@ const Footer = () => {
               <p className="mt-3 text-sm leading-5 text-gray-500">
                 Wij geven om uw persoonlijke data. Lees hoe in onze{` `}
                 <Link
-                  to="/privacy"
+                  to="/privacyverklaring"
                   className="font-medium text-gray-900 underline"
                 >
                   Privacy Voorwaarden

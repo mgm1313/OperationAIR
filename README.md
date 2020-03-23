@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/985ed63c-39d3-4c19-86ac-7e6e4b0010d0/deploy-status)](https://app.netlify.com/sites/operationair/deploys)
+
 # OperationAIR
 
 This repository contains the current site of the student project [OperationAIR](https://www.operationair.org/).
