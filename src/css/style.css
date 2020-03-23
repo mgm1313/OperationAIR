@@ -31,7 +31,14 @@ main .markdown-content li {
 main .markdown-content li:first-child {
   @apply mt-2;
 }
-main .markdown-content audio, canvas, embed, iframe, img, object, svg, video {
+main .markdown-content audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
   @apply max-w-full;
 }
 

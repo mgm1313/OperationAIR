@@ -8,6 +8,7 @@ seo:
     programma van eisen opgesteld voor de noodoplossing voor het beademen van
     coronapatiënten.
 ---
+
 # Programma van Eisen Noodoplossing Beademing Coronapatiënten
 
 Met behulp van de MoSCoW methode heeft het team van OperationAIR het Programma van Eisen opgesteld voor de noodoplossing voor het beademen van coronapatiënten.

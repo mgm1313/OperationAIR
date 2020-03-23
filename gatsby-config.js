@@ -64,8 +64,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
-              name: 'images',
-            },
+              name: "images"
+            }
           },
           {
             resolve: `gatsby-remark-images`,

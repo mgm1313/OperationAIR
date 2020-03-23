@@ -5,24 +5,36 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 import nameLogo from "../images/naam-operationAIR.svg";
 
 const Footer = () => {
-    const data = useStaticQuery(graphql`
-      {
-        file(sourceInstanceName: {eq: "components"}, internal: {mediaType: {eq: "text/markdown"}}, name: {eq: "footer"}) {
-          childMarkdownRemark {
-            frontmatter {
-              socialLinks {
-                name
-                link
-                path
+  const data = useStaticQuery(graphql`
+    {
+      file(
+        sourceInstanceName: { eq: "components" }
+        internal: { mediaType: { eq: "text/markdown" } }
+        name: { eq: "footer" }
+      ) {
+        childMarkdownRemark {
+          frontmatter {
+            socialLinks {
+              name
+              link
+              path
+            }
+            footerMenu {
+              titleLeft
+              titleRight
+              itemsLeft {
+                title
+                route
               }
-              footerMenu {
-                titleLeft
-                titleRight
+              itemsRight {
+                title
+                route
               }
             }
           }
         }
       }
+    }
   `);
 
   const socials = data.file.childMarkdownRemark.frontmatter.socialLinks;
@@ -35,25 +47,25 @@ const Footer = () => {
           <div className="xl:col-span-1">
             <img className="h-24" src={nameLogo} alt="OperationAIR" />
             {socials && (
-            <div className="mt-8 flex">
-              {socials.map((social, index) => (
-                <a
-                  href={social.link}
-                  className={`${index >= 1 &&
-                    `ml-6`} text-ucla hover:text-gray-500`}
-                  key={index}
-                >
-                  <span className="sr-only">{social.name}</span>
-                  <svg
-                    className="h-6 w-6"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    dangerouslySetInnerHTML={{ __html: social.path }}
-                  ></svg>
-                </a>
-              ))}
-            </div>
-          )}
+              <div className="mt-8 flex">
+                {socials.map((social, index) => (
+                  <a
+                    href={social.link}
+                    className={`${index >= 1 &&
+                      `ml-6`} text-ucla hover:text-gray-500`}
+                    key={index}
+                  >
+                    <span className="sr-only">{social.name}</span>
+                    <svg
+                      className="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      dangerouslySetInnerHTML={{ __html: social.path }}
+                    ></svg>
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
           <div className="mt-12 lg:grid lg:grid-cols-2 lg:gap-8 xl:mt-0 xl:col-span-2">
             <div className="grid grid-cols-2 gap-8">
@@ -62,22 +74,16 @@ const Footer = () => {
                   {menu.titleLeft}
                 </h4>
                 <ul className="mt-4">
-                  <li>
-                    <Link
-                      to="/over"
-                      className="text-base leading-6 text-gray-500 hover:text-gray-900"
-                    >
-                      Visie & Missie
-                    </Link>
-                  </li>
-                  <li className="mt-4">
-                    <Link
-                      to="/veelgestelde-vragen"
-                      className="text-base leading-6 text-gray-500 hover:text-gray-900"
-                    >
-                      FAQ
-                    </Link>
-                  </li>
+                  {menu.itemsLeft.map((item, index) => (
+                    <li key={index} className={`${index >= 1 && `mt-4`}`}>
+                      <Link
+                        to={item.route}
+                        className="text-base leading-6 text-gray-500 hover:text-gray-900"
+                      >
+                        {item.title}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div>
@@ -85,30 +91,16 @@ const Footer = () => {
                   {menu.titleRight}
                 </h4>
                 <ul className="mt-4">
-                  <li>
-                    <Link
-                      to="/team"
-                      className="text-base leading-6 text-gray-500 hover:text-gray-900"
-                    >
-                      Samenstelling
-                    </Link>
-                  </li>
-                  <li className="mt-4">
-                    <Link
-                      to="/ontwikkelingen"
-                      className="text-base leading-6 text-gray-500 hover:text-gray-900"
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                  <li className="mt-4">
-                    <Link
-                      to="/contact"
-                      className="text-base leading-6 text-gray-500 hover:text-gray-900"
-                    >
-                      Contact
-                    </Link>
-                  </li>
+                  {menu.itemsRight.map((item, index) => (
+                    <li key={index} className={`${index >= 1 && `mt-4`}`}>
+                      <Link
+                        to={item.route}
+                        className="text-base leading-6 text-gray-500 hover:text-gray-900"
+                      >
+                        {item.title}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
