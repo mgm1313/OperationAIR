@@ -10,11 +10,9 @@ seo:
 ---
 # Contact opnemen
 
-Heeft u een vraag voor ons team? Of bent u als ziekenhuis of bedrijf geïnteresseerd om met ons samen te werken of uw expertise te delen? Wij willen u vragen om het volgende formulier in te vullen om uw expertise en/of suggestie(s) goed te kunnen koppelen aan de juiste personen binnen ons team.
+Heeft u een vraag voor ons team? Of bent u als ziekenhuis of bedrijf geïnteresseerd om met ons samen te werken of uw expertise te delen? Wij willen u vragen om het onderstaande contactformulier in te vullen om uw expertise en/of suggestie(s) goed te kunnen koppelen aan de juiste personen binnen ons team.
 
-[Contactformulier](https://docs.google.com/forms/d/e/1FAIpQLSerxD20lExQzCFMajbm-Qs7xyZanmaZa1abSb_pPtCR0Rp4rA/viewform?usp=sf_link)
-
-Algemene vragen kunnen ook per e-mail naar het team op [info@operationair.org](mailto:info@operationair.org).
+Algemene vragen aan het team kunt u stellen per e-mail via [info@operationair.org](mailto:info@operationair.org).
 
 Pers vragen we contact op te nemen via [media@operationair.org](mailto:media@operationair.org).
 
