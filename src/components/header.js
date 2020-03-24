@@ -155,7 +155,7 @@ function Header() {
               </div>
               <div>
                 <Link
-                  href="/contact"
+                  to="/contact"
                   className="block w-full px-5 py-3 text-center font-medium text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out"
                 >
                   Contact
