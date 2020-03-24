@@ -52,7 +52,7 @@ const Footer = () => {
                   <a
                     href={social.link}
                     className={`${index >= 1 &&
-                      `ml-6`} text-ucla hover:text-gray-500`}
+                      `ml-4`} text-ucla hover:text-gray-500`}
                     key={index}
                   >
                     <span className="sr-only">{social.name}</span>
