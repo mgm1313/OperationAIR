@@ -72,8 +72,9 @@ function Header() {
                   to={link.route}
                   partiallyActive={true}
                   activeClassName="underline"
-                  className={`${index >= 1 &&
-                    `ml-2 lg:ml-4`} inline-block rounded-lg leading-none py-2 px-3 font-medium text-gray-50 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                  className={`${
+                    index >= 1 && `ml-2 lg:ml-4`
+                  } inline-block rounded-lg leading-none py-2 px-3 font-medium text-gray-50 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
                 >
                   {link.title}
                 </Link>
@@ -146,8 +147,9 @@ function Header() {
                   <a
                     key={index}
                     href={link.route}
-                    className={`${index >= 1 &&
-                      `mt-1`} block px-3 py-2 rounded-md text-base font-medium text-gray-100 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                    className={`${
+                      index >= 1 && `mt-1`
+                    } block px-3 py-2 rounded-md text-base font-medium text-gray-100 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
                   >
                     {link.title}
                   </a>

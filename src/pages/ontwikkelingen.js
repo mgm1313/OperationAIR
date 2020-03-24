@@ -79,8 +79,9 @@ function BlogsPage() {
               <Link
                 key={edge.node.name}
                 to={`/ontwikkelingen/${edge.node.name}`}
-                className={`block group no-underline font-normal ${index >= 1 &&
-                  `mt-4 sm:mt-0`}`}
+                className={`block group no-underline font-normal ${
+                  index >= 1 && `mt-4 sm:mt-0`
+                }`}
               >
                 <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
                   <div className="relative pb-7/12 overflow-hidden">

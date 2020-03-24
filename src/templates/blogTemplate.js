@@ -57,11 +57,11 @@ Template.propTypes = {
       frontmatter: PropTypes.shape({
         title: PropTypes.string.isRequired,
         date: PropTypes.string.isRequired,
-        featuredImg: PropTypes.node
+        featuredImg: PropTypes.node,
       }),
-      timeToRead: PropTypes.string.isRequired
-    })
-  })
+      timeToRead: PropTypes.string.isRequired,
+    }),
+  }),
 };
 
 export default Template;

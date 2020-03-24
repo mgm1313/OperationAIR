@@ -49,7 +49,7 @@ function Breadcrumb({ title, blog }) {
 
 Breadcrumb.propTypes = {
   title: PropTypes.string.isRequired,
-  blog: PropTypes.bool
+  blog: PropTypes.bool,
 };
 
 export default Breadcrumb;

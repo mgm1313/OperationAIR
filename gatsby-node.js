@@ -66,8 +66,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: `/${markdown.frontmatter.slug}`,
       component: pageTemplate,
       context: {
-        slug: markdown.frontmatter.slug
-      }
+        slug: markdown.frontmatter.slug,
+      },
     });
   });
 
@@ -76,8 +76,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: `/ontwikkelingen/${node.name}`,
       component: blogTemplate,
       context: {
-        id: node.childMarkdownRemark.id
-      }
+        id: node.childMarkdownRemark.id,
+      },
     });
   });
 };
