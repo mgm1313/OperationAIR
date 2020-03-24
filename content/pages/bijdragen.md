@@ -1,5 +1,5 @@
 ---
-slug: Bijdragen
+slug: bijdragen
 title: Bijdragen?
 seo:
   browserTitle: Bijdragen?
