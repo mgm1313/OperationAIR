@@ -112,7 +112,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        tailwind: true,
+        extractors: [
+          {
+            extractor: (content) =>
+                content.match(/[\w-/.:]+(?<!:)/g) || [],
+            extensions: ['js', 'ts', 'jsx', 'tsx', 'md', 'mdx']
+          }
+        ],
         purgeOnly: [`src/css/style.css`],
       },
     },
