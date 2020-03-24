@@ -16,4 +16,4 @@ Voor verdere bijdrage en expertise verwijzen we u graag verder naar onze [contac
 * **Zuurstofsensoren**
 
   * Nauwkeurige meting bij 21-100% zuurstof 
-  * Passend in een buis van 22mm doorsnede
+  * Kan aangesloten worden op een buis van 22 mm doorsnede
