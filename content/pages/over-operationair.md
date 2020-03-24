@@ -30,4 +30,4 @@ Het beademingsapparaat wordt ontwikkeld voor ziekenhuizen die met een tekort aan
 
 ## Expert support
 
-OperationAIR heeftdagelijks contact met intensivisten en technisch geneeskundigen uit het Leids Universitair Medisch Centrum (LUMC) en het Erasmus Medisch Centrum (EMC) over de actuele situatie op de intensive care afdelingen aldaar. Daarnaast is er contact geweest met de TU Eindhoven over de verwachte groei van het aantal coronapatiënten en de noodzaak voor een oplossing. Om de ontwikkeling van het beademingsapparaat te optimaliseren heeft het team ook contact met verschillende bedrijven en instanties.
+OperationAIR heeft dagelijks contact met intensivisten en technisch geneeskundigen uit het Leids Universitair Medisch Centrum (LUMC) en het Erasmus Medisch Centrum (EMC) over de actuele situatie op de intensive care afdelingen aldaar. Daarnaast is er contact geweest met de TU Eindhoven over de verwachte groei van het aantal coronapatiënten en de noodzaak voor een oplossing. Om de ontwikkeling van het beademingsapparaat te optimaliseren heeft het team ook contact met verschillende bedrijven en instanties.
