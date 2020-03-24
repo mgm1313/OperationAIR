@@ -6,6 +6,8 @@ menuItems:
     route: /team
   - title: Ontwikkelingen
     route: /ontwikkelingen
+  - title: Bijdragen?
+    route: /bijdragen
   - title: Ontwerpeisen
     route: /ontwerpeisen
   - title: FAQ
