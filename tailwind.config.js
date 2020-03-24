@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans]
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         japanese: "#263655",
@@ -14,7 +14,7 @@ module.exports = {
         almond: "#ebe1d0",
         azureish: "#cee9f3",
         alabaster: "#e1f0e6",
-        "air-gray": "#d0d2d4"
+        "air-gray": "#d0d2d4",
       },
       spacing: {
         "1/2": "50%",
@@ -43,13 +43,13 @@ module.exports = {
         "9/12": "75%",
         "10/12": "83.333333%",
         "11/12": "91.666667%",
-        full: "100%"
-      }
-    }
+        full: "100%",
+      },
+    },
   },
   variants: {
     textColor: ["responsive", "hover", "focus", "group-hover"],
-    scale: ["responsive", "hover", "focus", "group-hover"]
+    scale: ["responsive", "hover", "focus", "group-hover"],
   },
-  plugins: [require("@tailwindcss/ui")]
+  plugins: [require("@tailwindcss/ui")],
 };

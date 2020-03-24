@@ -171,7 +171,7 @@ function IndexPage() {
                   <div
                     className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
                     dangerouslySetInnerHTML={{
-                      __html: toHTML(pageContent.introduction.text)
+                      __html: toHTML(pageContent.introduction.text),
                     }}
                   ></div>
                   <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
@@ -285,7 +285,7 @@ function IndexPage() {
           <div
             className="max-w-lg mx-auto"
             dangerouslySetInnerHTML={{
-              __html: toHTML(pageContent.blog.introduction)
+              __html: toHTML(pageContent.blog.introduction),
             }}
           ></div>
         </div>
@@ -297,8 +297,9 @@ function IndexPage() {
               <Link
                 key={edge.node.name}
                 to={`/ontwikkelingen/${edge.node.name}`}
-                className={`block group no-underline font-normal ${index >= 1 &&
-                  `mt-4 sm:mt-0`}`}
+                className={`block group no-underline font-normal ${
+                  index >= 1 && `mt-4 sm:mt-0`
+                }`}
               >
                 <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
                   <div className="relative pb-7/12 overflow-hidden">
@@ -369,7 +370,7 @@ function IndexPage() {
                 <div
                   className="mt-3 max-w-3xl text-lg leading-7 text-gray-500"
                   dangerouslySetInnerHTML={{
-                    __html: toHTML(pageContent.partners.content)
+                    __html: toHTML(pageContent.partners.content),
                   }}
                 ></div>
                 <div className="mt-8 sm:flex">
@@ -392,7 +393,7 @@ function IndexPage() {
                 </div>
               </div>
               <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-                {pageContent.partners.logo_s.map(partner => {
+                {pageContent.partners.logo_s.map((partner) => {
                   const logo = partner.image;
 
                   return (

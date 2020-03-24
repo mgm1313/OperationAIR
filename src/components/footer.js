@@ -51,8 +51,9 @@ const Footer = () => {
                 {socials.map((social, index) => (
                   <a
                     href={social.link}
-                    className={`${index >= 1 &&
-                      `ml-4`} text-ucla hover:text-gray-500`}
+                    className={`${
+                      index >= 1 && `ml-4`
+                    } text-ucla hover:text-gray-500`}
                     key={index}
                   >
                     <span className="sr-only">{social.name}</span>

@@ -11,7 +11,7 @@ function Transition({
   leave,
   leaveFrom,
   leaveTo,
-  children
+  children,
 }) {
   const enterClasses = enter.split(" ");
   const enterFromClasses = enterFrom.split(" ");
@@ -27,24 +27,24 @@ function Transition({
       addEndListener={(node, done) => {
         node.addEventListener("transitionend", done, false);
       }}
-      onEnter={node => {
+      onEnter={(node) => {
         node.classList.add(...enterClasses, ...enterFromClasses);
       }}
-      onEntering={node => {
+      onEntering={(node) => {
         node.classList.remove(...enterFromClasses);
         node.classList.add(...enterToClasses);
       }}
-      onEntered={node => {
+      onEntered={(node) => {
         node.classList.remove(...enterToClasses, ...enterClasses);
       }}
-      onExit={node => {
+      onExit={(node) => {
         node.classList.add(...leaveClasses, ...leaveFromClasses);
       }}
-      onExiting={node => {
+      onExiting={(node) => {
         node.classList.remove(...leaveFromClasses);
         node.classList.add(...leaveToClasses);
       }}
-      onExited={node => {
+      onExited={(node) => {
         node.classList.remove(...leaveToClasses, ...leaveClasses);
       }}
     >
@@ -61,7 +61,7 @@ Transition.propTypes = {
   leave: PropTypes.string,
   leaveFrom: PropTypes.string,
   leaveTo: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default Transition;
