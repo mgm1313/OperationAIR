@@ -7,16 +7,25 @@ Little disclaimer: This side was made in just 3 days, so there's still a lot to 
 
 ## 🚀 Quick start
 
-1.  **Start developing.**
+1. **Setup**
+
+    ```shell
+    clone git@github.com:TECHMAUS/OperationAIR.git
+    cd OperationAIR
+    npm install -g gatsby-cli
+    npm install
+    ```
+
+2.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd operationair/
+    cd OperationAIR/
     gatsby develop
     ```
 
-2.  **Open the source code and start editing!**
+3.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
