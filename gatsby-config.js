@@ -114,10 +114,9 @@ module.exports = {
       options: {
         extractors: [
           {
-            extractor: (content) =>
-                content.match(/[\w-/.:]+(?<!:)/g) || [],
-            extensions: ['js', 'ts', 'jsx', 'tsx', 'md', 'mdx']
-          }
+            extractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
+            extensions: ["js", "ts", "jsx", "tsx", "md", "mdx"],
+          },
         ],
         purgeOnly: [`src/css/style.css`],
       },
