@@ -38,8 +38,25 @@ questions:
       intensivisten van het LUMC. Bent u hier namens een intensive care naar op
       zoek? Neem dan contact op met
       [info@operationair.org](mailto:info@operationair.org)
-  - question: "Ik wil helpen, wat kan ik doen?"
+  - question: 'Ik wil helpen, wat kan ik doen?'
     answer: >-
       Heel fijn dat u zich wilt inzetten! Graag vragen wij u  het
       contactformulier in te vullen onder contact.
+  - question: >-
+      Hoe gaan jullie om met de landelijke richtlijnen m.b.t. afstand houden en
+      thuiswerken?
+    answer: >-
+      <!--StartFragment-->
+
+
+      Ons team werkt volgens de meest recente landelijke richtlijnen met
+      betrekking tot infectiepreventie. Veel van onze teamleden werken daarom
+      vanuit huis. Sommige teamleden moeten fysiek op de universiteit zijn om te
+      bouwen aan het prototype. Zij werken in kleine groepjes verspreid door het
+      gebouw, leven strikte handhygiëne na en houden altijd minimaal 1,5 meter
+      afstand van elkaar. De teamleden houden elkaar op de hoogte door het
+      gebruik van online communicatieplatformen.
+
+
+      <!--EndFragment-->
 ---
