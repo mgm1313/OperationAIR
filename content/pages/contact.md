@@ -16,10 +16,6 @@ Algemene vragen aan het team kunt u stellen per e-mail via [info@operationair.or
 
 Pers vragen we contact op te nemen via [media@operationair.org](mailto:media@operationair.org).
 
-
-
-*Wij hebben al veel hulp aangeboden gekregen van andere studenten en hier zijn wij heel blij mee! Echter hebben wij nu voldoende studenten voor ons project, dus hiervoor kan je je helaas niet meer aanmelden. Mocht dit veranderen, zullen wij dit ook communiceren via onze website en social media kanalen.*
-
-
+*Wij hebben momenteel voldoende studenten meewerken aan ons project. Helaas is aanmelden hiervoor momenteel niet mogelijk. Mocht dit veranderen, zullen wij dit ook communiceren via onze website en social media kanalen.*
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSerxD20lExQzCFMajbm-Qs7xyZanmaZa1abSb_pPtCR0Rp4rA/viewform?embedded=true" width="640" height="1190" frameborder="0" marginheight="0" marginwidth="0">Laden…</iframe>
