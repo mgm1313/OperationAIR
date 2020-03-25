@@ -8,10 +8,11 @@ seo:
     geïnteresseerd om met ons samen te werken of uw expertise te delen? Neem dan
     contact met ons op.
 ---
-
 # Contact opnemen
 
 Heeft u een vraag voor ons team? Of bent u als ziekenhuis of bedrijf geïnteresseerd om met ons samen te werken of uw expertise te delen? Wij willen u vragen om het onderstaande contactformulier in te vullen om uw expertise en/of suggestie(s) goed te kunnen koppelen aan de juiste personen binnen ons team.
+
+*Wij hebben al veel hulp aangeboden gekregen van andere studenten en hier zijn wij heel blij mee! Echter hebben wij nu voldoende studenten voor ons project, dus hiervoor kan je je helaas niet meer aanmelden.*
 
 Algemene vragen aan het team kunt u stellen per e-mail via [info@operationair.org](mailto:info@operationair.org).
 
