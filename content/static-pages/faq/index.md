@@ -59,4 +59,19 @@ questions:
 
 
       <!--EndFragment-->
+  - question: >-
+      Wordt er vanuit OperationAIR ook gewerkt aan productie en implementatie
+      buiten Nederland?
+    answer: >-
+      <!--StartFragment-->
+
+
+      Als het lukt om een design te verwezenlijken, zal het beademingsapparaat
+      in eerste instantie alleen in Nederland worden geproduceerd en
+      geïmplementeerd. Het design en alle verdere informatie zal open source
+      worden gepubliceerd, zodat andere landen wereldwijd hiervan gebruik kunnen
+      maken.
+
+
+      <!--EndFragment-->
 ---
