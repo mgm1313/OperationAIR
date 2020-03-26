@@ -19,6 +19,6 @@ Het realisatieteam houdt zich ondertussen bezig met de productie en implementati
 
 Wij zijn benieuwd hoe de rest van deze week gaat lopen en gaan hard aan de slag om de productie te gaan verwezenlijken. Wij hopen hierbij volgende week met verder goed nieuws te komen!
 
-
-
 <!--EndFragment-->
+
+![](/assets/design_team.jpg)
