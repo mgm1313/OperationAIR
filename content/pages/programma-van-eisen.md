@@ -8,7 +8,6 @@ seo:
     programma van eisen opgesteld voor de noodoplossing voor het beademen van
     coronapatiënten.
 ---
-
 # Programma van Eisen Noodoplossing Beademing Coronapatiënten
 
 Met behulp van de MoSCoW methode heeft het team van OperationAIR het Programma van Eisen opgesteld voor de noodoplossing voor het beademen van coronapatiënten.
@@ -23,7 +22,7 @@ Met behulp van de MoSCoW methode heeft het team van OperationAIR het Programma v
     <th class="px-4 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Must </td>
     <th class="px-4 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Should </td>
     <th class="px-4 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Could </td>
-    <th class="px-4 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Wont </td>
+    <th class="px-4 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Won't </td>
   </tr>
   </thead>
   <tbody>
@@ -32,10 +31,10 @@ Met behulp van de MoSCoW methode heeft het team van OperationAIR het Programma v
         - Adjustable settings:  
         <div class="pl-3">
           + Freq. 30/min <br />
-          + Tv 300 - 700 mL<sup>\[1]</sup> <br />
+          + Tv 300 - 700 mL<sup>\\[1]</sup> <br />
           + Pplat < 35 cmH2O <br />
           + Pressure controlled <br />
-          + 15cm H2O PEEP<sup>\[2]</sup> <br />
+          + 15cm H2O PEEP<sup>\\[2]</sup> <br />
           + FiO2 → 100% <br />
           + I:E → 1:2 <br />
           + inspiratory flow 1.5L/s
