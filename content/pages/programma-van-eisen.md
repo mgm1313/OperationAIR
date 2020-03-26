@@ -31,10 +31,10 @@ Met behulp van de MoSCoW methode heeft het team van OperationAIR het Programma v
         - Adjustable settings:  
         <div class="pl-3">
           + Freq. 30/min <br />
-          + Tv 300 - 700 mL<sup>\\[1]</sup> <br />
+          + Tv 300 - 700 mL<sup>\\\[1]</sup> <br />
           + Pplat < 35 cmH2O <br />
           + Pressure controlled <br />
-          + 15cm H2O PEEP<sup>\\[2]</sup> <br />
+          + 15cm H2O PEEP<sup>\\\[2]</sup> <br />
           + FiO2 → 100% <br />
           + I:E → 1:2 <br />
           + inspiratory flow 1.5L/s
@@ -50,7 +50,7 @@ Met behulp van de MoSCoW methode heeft het team van OperationAIR het Programma v
     </td>
     <td class="px-4 py-2 whitespace-no-wrap border-r border-gray-200">
         - Freq. 5 - 30/min <br />
-        - 200-1500 <br />
+        - Tv 200-1500 mL <br />
         - 25cm H2O PEEP
     </td>
     <td class="px-4 py-2 whitespace-no-wrap">
