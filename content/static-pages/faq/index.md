@@ -23,7 +23,7 @@ questions:
     answer: >-
       We onderzoeken alle verschillende scenario’s m.b.t. beademingsapparatuur
       in Nederland en hebben daarbij als doel een beademingsapparaat ontwikkelen
-      die ingezet kan worden in een noodsituatie waarbij er een tekort optreedt.
+      dat ingezet kan worden in een noodsituatie waarbij er een tekort optreedt.
   - question: >-
       Hoe lang duurt het voordat de beademingsapparaten in werking genomen
       kunnen worden?
