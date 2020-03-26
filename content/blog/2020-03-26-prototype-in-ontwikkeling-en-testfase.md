@@ -1,7 +1,7 @@
 ---
 date: 2020-03-26T15:08:41.654Z
 title: Prototype in ontwikkeling en testfase
-featuredImg: /assets/design_team.jpg
+featuredImg: /assets/design_team-26mrt-2.jpg
 ---
 <!--StartFragment-->
 
@@ -21,4 +21,4 @@ Wij zijn benieuwd hoe de rest van deze week gaat lopen en gaan hard aan de slag 
 
 <!--EndFragment-->
 
-![](/assets/design_team.jpg)
+![](/assets/design_team-26mrt-2.jpg)
