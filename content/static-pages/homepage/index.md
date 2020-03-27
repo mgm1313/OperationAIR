@@ -10,8 +10,8 @@ introduction:
     ingezet kan worden bij eventuele tekorten ten gevolge van het coronavirus.
 
 
-    URGENT: Wie kan ons helpen met flowsensoren?! Voor meer informatie klik op
-    de "Bijdragen?" knop!
+    URGENT: Wie kan ons helpen met flowsensoren? Voor meer informatie klik op de
+    "Bijdragen?" knop.
   button1:
     title: Onze aanpak
     link: /over
