@@ -8,15 +8,19 @@ introduction:
     Ons studententeam van de TU Delft houdt zich op dit moment bezig met het
     ontwikkelen van een veilig en snel te produceren beademingsapparaat, dat
     ingezet kan worden bij eventuele tekorten ten gevolge van het coronavirus.
+
+
+    URGENT: Wie kan ons helpen met flowsensoren?! Voor meer informatie klik op
+    de "Bijdragen?" knop!
   button1:
     title: Onze aanpak
     link: /over
   button2:
-    title: Lees de FAQ
-    link: /veelgestelde-vragen
+    title: Bijdragen?
+    link: /bijdragen
   video:
     youtubeID: M0Qhe8esdxg
-    subtitle: "Bron: Nieuwsuur (vrijdag 20 maart 2020)"
+    subtitle: 'Bron: Nieuwsuur (vrijdag 20 maart 2020)'
 blog:
   title: De laatste ontwikkelingen
   introduction: >-
@@ -42,12 +46,12 @@ partners:
     link: /contact
   logo_s:
     - title: Technische Universiteit Delft
-      url: "https://www.tudelft.nl/"
+      url: 'https://www.tudelft.nl/'
       image: /assets/tudelft.svg
     - image: /assets/lumc.svg
       title: Leidsch Universiteit Medisch Centrum
-      url: "https://www.lumc.nl/"
+      url: 'https://www.lumc.nl/'
     - title: Erasmus MC
-      url: "https://www.erasmusmc.nl/"
+      url: 'https://www.erasmusmc.nl/'
       image: /assets/erasmus.png
 ---
