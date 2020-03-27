@@ -9,16 +9,6 @@ seo:
 
 Heel fijn dat u een bijdrage wilt leveren aan OperationAIR!
 
-Hieronder vind u specifieke producten en/of diensten waar wij momenteel naar op zoek zijn. Bent u of kent u iemand die ons hiermee zou kunnen helpen? Neem dan contact met ons op via: [info@operationair.nl](<mailto: info@operationair.org>). Zet hierbij het relevante onderdeel in de onderwerpsregel, zodat wij zo snel mogelijk bij u terug kunnen komen.
+Momenteel zijn we **dringend** op zoek naar **500 flow sensoren**, idealiter de AWM720p1 Honeywell sensor.
 
-Voor overige bijdragen en expertise verwijzen we u graag verder naar onze [contactpagina](/contact).
-
-**Zuurstofsensoren**
-
-* Nauwkeurige meting bij 21-100% zuurstof
-* Kan aangesloten worden op een buis van maximaal 22 mm doorsnede
-
-**Flowsensoren**
-
-* Idealiter AWM700 series Honeywell sensoren
-* Andere optie is Sensirion
+Alternatieven zijn de Honeywell AWM700 series, digitale Sensirion SFM3000 series en andere digitale flow sensoren met een SLPM van ~200 (minstens 150) en afmetingen van maximaal 22 mm in diameter aan de uiteindes. Online zijn deze niet verkrijgbaar. Wie o wie kan ons helpen? Graag mailen naar [info@operationair.org ](mailto:info@operationair.org)met in de titel \[flowsensor].
