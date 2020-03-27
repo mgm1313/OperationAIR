@@ -5,7 +5,6 @@ seo:
   browserTitle: Bijdragen?
   description: Bijdrage leveren
 ---
-
 # Bijdragen?
 
 Heel fijn dat u een bijdrage wilt leveren aan OperationAIR!
@@ -16,5 +15,12 @@ Voor overige bijdragen en expertise verwijzen we u graag verder naar onze [conta
 
 **Zuurstofsensoren**
 
-- Nauwkeurige meting bij 21-100% zuurstof
-- Kan aangesloten worden op een buis van maximaal 22 mm doorsnede
+* Nauwkeurige meting bij 21-100% zuurstof
+* Kan aangesloten worden op een buis van maximaal 22 mm doorsnede
+
+
+
+**Flowsensoren**
+
+* Idealiter AWM700 series Honeywell senoren
+* Andere optie is Sensirion
