@@ -8,10 +8,6 @@ introduction:
     Ons studententeam van de TU Delft houdt zich op dit moment bezig met het
     ontwikkelen van een veilig en snel te produceren beademingsapparaat, dat
     ingezet kan worden bij eventuele tekorten ten gevolge van het coronavirus.
-
-
-    URGENT: Wie kan ons helpen met flowsensoren? Voor meer informatie klik op de
-    "Bijdragen?" knop.
   button1:
     title: Onze aanpak
     link: /over
