@@ -12,8 +12,8 @@ introduction:
     title: Onze aanpak
     link: /over
   button2:
-    title: Bijdragen?
-    link: /bijdragen
+    title: Ga naar FAQ
+    link: /veelgestelde-vragen
   video:
     youtubeID: M0Qhe8esdxg
     subtitle: 'Bron: Nieuwsuur (vrijdag 20 maart 2020)'
