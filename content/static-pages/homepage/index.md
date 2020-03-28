@@ -15,7 +15,7 @@ introduction:
     title: Lees de FAQ
     link: /veelgestelde-vragen
   video:
-    youtubeID: M0Qhe8esdxg
+    youtubeID: "399833473"
     subtitle: "Bron: Nieuwsuur (vrijdag 20 maart 2020)"
 blog:
   title: De laatste ontwikkelingen

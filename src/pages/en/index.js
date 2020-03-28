@@ -3,19 +3,19 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 
 import Img from "gatsby-image";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
 
 import ReactPlayer from "react-player";
 
-import toHTML from "../utils/md2html";
+import toHTML from "../../utils/md2html";
 
 function IndexPage() {
   const data = useStaticQuery(graphql`
     {
       pageContent: file(
         sourceInstanceName: { eq: "staticPages" }
-        relativeDirectory: { eq: "homepage" }
+        relativeDirectory: { eq: "en/homepage" }
         internal: { mediaType: { eq: "text/markdown" } }
       ) {
         childMarkdownRemark {
@@ -72,7 +72,7 @@ function IndexPage() {
         }
       }
       blogPosts: allFile(
-        filter: { sourceInstanceName: { eq: "blog" } }
+        filter: { sourceInstanceName: { eq: "blog-en" } }
         sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
         limit: 3
       ) {
@@ -101,9 +101,10 @@ function IndexPage() {
 
   const pageContent = data.pageContent.childMarkdownRemark.frontmatter;
   const blogPosts = data.blogPosts.edges;
+  console.log(blogPosts);
 
   return (
-    <Layout>
+    <Layout en={true}>
       <SEO keywords={[`technical`, `medicine`]} title={pageContent.title} />
 
       <section className="-mt-8">
@@ -281,7 +282,7 @@ function IndexPage() {
 
       <section className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="mb-8 text-center">
-          <h2 className="text-2xl">De laatste ontwikkelingen</h2>
+          <h2 className="text-2xl">{pageContent.blog.title}</h2>
           <div
             className="max-w-lg mx-auto"
             dangerouslySetInnerHTML={{

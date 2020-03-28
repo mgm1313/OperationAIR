@@ -7,11 +7,11 @@ seo:
 ---
 # Bijdragen?
 
-Heel fijn dat u een bijdrage wilt leveren aan OperationAIR!
+Heel fijn dat u een bijdrage wilt leveren aan OperationAIR
 
 Hieronder vind u specifieke producten en/of diensten waar wij momenteel naar op zoek zijn. Bent u of kent u iemand die ons hiermee zou kunnen helpen? Neem dan contact met ons op via: [info@operationair.nl](<mailto: info@operationair.org>)
 
-Voor overige bijdragen en expertise verwijzen we u graag verder naar onze [contactpagina](/contact). 
+Voor overige bijdragen en expertise verwijzen we u graag verder naar onze [contactpagina](/contact).  <br/><br/><hr/><br/>
 
 
 

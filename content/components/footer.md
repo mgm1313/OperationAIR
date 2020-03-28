@@ -23,4 +23,19 @@ footerMenu:
       route: /ontwikkelingen
     - title: Contact
       route: /contact
+footerMenu_en:
+  titleLeft: Approach
+  titleRight: Team
+  itemsLeft:
+    - title: Vission & Mission
+      route: /en/about
+    - title: FAQ
+      route: /en/faq
+  itemsRight:
+    - title: Composition
+      route: /en/team
+    - title: Blog
+      route: /en/development
+    - title: Contact
+      route: /en/contact
 ---

@@ -53,6 +53,26 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `);
 
+  const articles_en = await graphql(`
+    {
+      allFile(
+        filter: {
+          internal: { mediaType: { eq: "text/markdown" } }
+          sourceInstanceName: { eq: "blog-en" }
+        }
+      ) {
+        edges {
+          node {
+            name
+            childMarkdownRemark {
+              id
+            }
+          }
+        }
+      }
+    }
+  `);
+
   // Handle errors
   if (pages.errors || articles.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
@@ -74,6 +94,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   articles.data.allFile.edges.forEach(({ node }) => {
     createPage({
       path: `/ontwikkelingen/${node.name}`,
+      component: blogTemplate,
+      context: {
+        id: node.childMarkdownRemark.id
+      }
+    });
+  });
+  articles_en.data.allFile.edges.forEach(({ node }) => {
+    createPage({
+      path: `/en/developments/${node.name}`,
       component: blogTemplate,
       context: {
         id: node.childMarkdownRemark.id
