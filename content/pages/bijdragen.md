@@ -9,8 +9,8 @@ seo:
 
 Heel fijn dat u een bijdrage wilt leveren aan OperationAIR!
 
-Momenteel zijn we **dringend** op zoek naar **500 flow sensoren**, idealiter de AWM720p1 Honeywell sensor.
+Hieronder vindt u specifieke producten en/of diensten waar wij momenteel naar op zoek zijn. Bent u of kent u iemand die ons hiermee zou kunnen helpen? Neem dan contact met ons op via: [info@operationair.org](mailto:info@operationair.org). Zet hierbij het relevante onderdeel in de onderwerpsregel, zodat wij zo snel mogelijk bij u terug kunnen komen.
 
-Alternatieven zijn de Honeywell AWM700 series, digitale Sensirion SFM3000 series en andere digitale flow sensoren met een SLPM van ~200 (minstens 150) en afmetingen van maximaal 22 mm in diameter aan de uiteindes. Online zijn deze niet verkrijgbaar. Wie o wie kan ons helpen? Graag mailen naar [info@operationair.org ](mailto:info@operationair.org)met in de onderwerpregel \[flowsensor].
+Voor overige bijdragen en expertise verwijzen we u graag verder naar onze [contactpagina](/contact).
 
-![](/assets/image.png)
+**Momenteel zijn wij niet op zoek naar specifieke producten of expertise.**
