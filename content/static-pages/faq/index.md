@@ -23,7 +23,7 @@ questions:
     answer: >-
       We onderzoeken alle verschillende scenario’s m.b.t. beademingsapparatuur
       in Nederland en hebben daarbij als doel een beademingsapparaat ontwikkelen
-      die ingezet kan worden in een noodsituatie waarbij er een tekort optreedt.
+      dat ingezet kan worden in een noodsituatie waarbij er een tekort optreedt.
   - question: >-
       Hoe lang duurt het voordat de beademingsapparaten in werking genomen
       kunnen worden?
@@ -38,8 +38,40 @@ questions:
       intensivisten van het LUMC. Bent u hier namens een intensive care naar op
       zoek? Neem dan contact op met
       [info@operationair.org](mailto:info@operationair.org)
+  - question: >-
+      Wordt er vanuit OperationAIR ook gewerkt aan productie en implementatie
+      buiten Nederland?
+    answer: >-
+      <!--StartFragment-->
+
+
+      Als het lukt om een design te verwezenlijken, zal het beademingsapparaat
+      in eerste instantie alleen in Nederland worden geproduceerd en
+      geïmplementeerd. Het design en alle verdere informatie zal open source
+      worden gepubliceerd, zodat andere landen wereldwijd hiervan gebruik kunnen
+      maken.
+
+
+      <!--EndFragment-->
   - question: 'Ik wil helpen, wat kan ik doen?'
     answer: >-
       Heel fijn dat u zich wilt inzetten! Graag vragen wij u  het
       contactformulier in te vullen onder contact.
+  - question: >-
+      Hoe gaan jullie om met de landelijke richtlijnen m.b.t. afstand houden en
+      thuiswerken?
+    answer: >-
+      <!--StartFragment-->
+
+
+      Ons team werkt volgens de meest recente landelijke richtlijnen met
+      betrekking tot infectiepreventie. Veel van onze teamleden werken daarom
+      vanuit huis. Sommige teamleden moeten fysiek op de universiteit zijn om te
+      bouwen aan het prototype. Zij werken in kleine groepjes verspreid door het
+      gebouw, leven strikte handhygiëne na en houden altijd minimaal 1,5 meter
+      afstand van elkaar. De teamleden houden elkaar op de hoogte door het
+      gebruik van online communicatieplatformen.
+
+
+      <!--EndFragment-->
 ---

@@ -39,11 +39,11 @@ Template.propTypes = {
         slug: PropTypes.string.isRequired,
         seo: PropTypes.shape({
           browserTitle: PropTypes.string,
-          description: PropTypes.string
-        })
-      })
-    })
-  })
+          description: PropTypes.string,
+        }),
+      }),
+    }),
+  }),
 };
 
 export default Template;
