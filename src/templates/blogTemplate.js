@@ -12,7 +12,7 @@ function Template({ data}) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
-  const en = location.href.indexOf("ontwikkelingen") === -1;
+  const en = typeof window !== `undefined` ? window.location.href.indexOf("ontwikkelingen") === -1 : false;
   return (
     <Layout>
       <SEO title={frontmatter.title} />
