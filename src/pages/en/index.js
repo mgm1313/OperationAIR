@@ -3,19 +3,19 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 
 import Img from "gatsby-image";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
 
 import ReactPlayer from "react-player";
 
-import toHTML from "../utils/md2html";
+import toHTML from "../../utils/md2html";
 
 function IndexPage() {
   const data = useStaticQuery(graphql`
     {
       pageContent: file(
         sourceInstanceName: { eq: "staticPages" }
-        relativeDirectory: { eq: "homepage" }
+        relativeDirectory: { eq: "en/homepage" }
         internal: { mediaType: { eq: "text/markdown" } }
       ) {
         childMarkdownRemark {
@@ -72,7 +72,7 @@ function IndexPage() {
         }
       }
       blogPosts: allFile(
-        filter: { sourceInstanceName: { eq: "blog" } }
+        filter: { sourceInstanceName: { eq: "blog-en" } }
         sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
         limit: 3
       ) {
@@ -101,9 +101,10 @@ function IndexPage() {
 
   const pageContent = data.pageContent.childMarkdownRemark.frontmatter;
   const blogPosts = data.blogPosts.edges;
+  console.log(blogPosts);
 
   return (
-    <Layout>
+    <Layout en={true}>
       <SEO keywords={[`technical`, `medicine`]} title={pageContent.title} />
 
       <section className="-mt-8">
@@ -171,7 +172,7 @@ function IndexPage() {
                   <div
                     className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
                     dangerouslySetInnerHTML={{
-                      __html: toHTML(pageContent.introduction.text),
+                      __html: toHTML(pageContent.introduction.text)
                     }}
                   ></div>
                   <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
@@ -281,11 +282,11 @@ function IndexPage() {
 
       <section className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="mb-8 text-center">
-          <h2 className="text-2xl">De laatste ontwikkelingen</h2>
+          <h2 className="text-2xl">{pageContent.blog.title}</h2>
           <div
             className="max-w-lg mx-auto"
             dangerouslySetInnerHTML={{
-              __html: toHTML(pageContent.blog.introduction),
+              __html: toHTML(pageContent.blog.introduction)
             }}
           ></div>
         </div>
@@ -297,9 +298,8 @@ function IndexPage() {
               <Link
                 key={edge.node.name}
                 to={`/ontwikkelingen/${edge.node.name}`}
-                className={`block group no-underline font-normal ${
-                  index >= 1 && `mt-4 sm:mt-0`
-                }`}
+                className={`block group no-underline font-normal ${index >= 1 &&
+                  `mt-4 sm:mt-0`}`}
               >
                 <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
                   <div className="relative pb-7/12 overflow-hidden">
@@ -370,7 +370,7 @@ function IndexPage() {
                 <div
                   className="mt-3 max-w-3xl text-lg leading-7 text-gray-500"
                   dangerouslySetInnerHTML={{
-                    __html: toHTML(pageContent.partners.content),
+                    __html: toHTML(pageContent.partners.content)
                   }}
                 ></div>
                 <div className="mt-8 sm:flex">
@@ -393,7 +393,7 @@ function IndexPage() {
                 </div>
               </div>
               <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-                {pageContent.partners.logo_s.map((partner) => {
+                {pageContent.partners.logo_s.map(partner => {
                   const logo = partner.image;
                   if (logo === null) return;
 

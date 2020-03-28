@@ -10,14 +10,16 @@ function Template({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
+  const en = frontmatter.slug.toString().indexOf("en/") >= 0;
+
   return (
-    <Layout>
+    <Layout en={en}>
       <SEO
         title={frontmatter.seo.browserTitle}
         description={frontmatter.seo.description}
       />
       <section className="max-w-full md:max-w-3xl mx-auto my-4 md:my-6 lg:my-12">
-        <Breadcrumb title={frontmatter.slug} />
+        <Breadcrumb title={frontmatter.slug.toString().replace("en/", "")} en={en} />
 
         <div
           className="markdown-content"

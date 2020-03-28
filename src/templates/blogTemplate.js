@@ -8,10 +8,11 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Breadcrumb from "../components/breadcrumb";
 
-function Template({ data }) {
+function Template({ data}) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
+  const en = typeof window !== `undefined` ? window.location.href.indexOf("ontwikkelingen") === -1 : false;
   return (
     <Layout>
       <SEO title={frontmatter.title} />
@@ -29,7 +30,7 @@ function Template({ data }) {
       </section>
 
       <section className="max-w-full md:max-w-lg mx-auto my-4 md:my-6 lg:my-10">
-        <Breadcrumb blog title={frontmatter.title} />
+        <Breadcrumb blog title={frontmatter.title} en={en}/>
 
         <div className="text-gray-400 text-sm lg:text-base mb-1">
           <span>{frontmatter.date}</span>
