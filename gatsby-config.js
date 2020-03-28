@@ -1,12 +1,12 @@
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
+  path: `.env.${process.env.NODE_ENV}`,
 });
 
 module.exports = {
   siteMetadata: {
     title: `OperationAIR`,
     description: `We assist in respiration by building ventilators.`,
-    author: `OperationAIR`
+    author: `OperationAIR`,
   },
   plugins: [
     {
@@ -19,29 +19,29 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
-        respectDNT: true
-      }
+        respectDNT: true,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/assets`,
-        name: `images`
-      }
+        name: `images`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/pages/`,
-        name: `pages`
-      }
+        name: `pages`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog/`,
-        name: `blog`
-      }
+        name: `blog`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -61,15 +61,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/components/`,
-        name: `components`
-      }
+        name: `components`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/static-pages/`,
-        name: `staticPages`
-      }
+        name: `staticPages`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -78,8 +78,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
-              name: "images"
-            }
+              name: "images",
+            },
           },
           {
             resolve: `gatsby-remark-images`,
@@ -89,11 +89,11 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 512,
               showCaptions: ["title"],
-              wrapperStyle: `margin:2rem auto;`
-            }
-          }
-        ]
-      }
+              wrapperStyle: `margin:2rem auto;`,
+            },
+          },
+        ],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -108,8 +108,8 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#263655`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`
-      }
+        icon: `src/images/icon.png`,
+      },
     },
     {
       resolve: "gatsby-plugin-postcss",
@@ -117,31 +117,26 @@ module.exports = {
         postCssPlugins: [
           require(`tailwindcss`)(`./tailwind.config.js`),
           require(`autoprefixer`),
-          ...(process.env.NODE_ENV === "production" ? [require(`cssnano`)] : [])
-        ]
-      }
+          ...(process.env.NODE_ENV === "production"
+            ? [require(`cssnano`)]
+            : []),
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         extractors: [
           {
-            extractor: class {
-              /**
-               * @param {object} content
-               */
-              static extract(content) {
-                return content.match(/[\w-/.:]+(?<!:)/g) || [];
-              }
-            },
-            extensions: ["js", "ts", "jsx", "tsx", "md", "mdx"]
-          }
+            extractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
+            extensions: ["js", "ts", "jsx", "tsx", "md", "mdx"],
+          },
         ],
-        purgeOnly: [`src/css/style.css`]
-      }
+        purgeOnly: [`src/css/style.css`],
+      },
     },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-offline`
-  ]
+    `gatsby-plugin-offline`,
+  ],
 };
