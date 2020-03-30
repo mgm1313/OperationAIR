@@ -14,7 +14,7 @@ function Template({ data}) {
 
   const en = typeof window !== `undefined` ? window.location.href.indexOf("ontwikkelingen") === -1 : false;
   return (
-    <Layout>
+    <Layout en={en}>
       <SEO title={frontmatter.title} />
 
       <section className="w-full max-w-screen-md mx-auto">
