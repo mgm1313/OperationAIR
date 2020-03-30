@@ -1,7 +1,7 @@
 ---
 title: Partners
 body: >-
-  Wij willen graag onze partners bedankt voor hun steun! Zij hebben ons onder andere geholpen met hun kennis, donaties van componenten en financiële hulp.
+  OperationAIR is in nauwe samenwerking met:
 partners:
   logo_s:
     - title: Technische Universiteit Delft

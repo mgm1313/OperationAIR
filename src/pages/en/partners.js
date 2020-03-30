@@ -87,7 +87,7 @@ function PartnersPage() {
           >
 
           </div>
-          <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
+          <div className="mt-8 grid grid-cols-4 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-4">
             {pageData.partners.logo_s.map(partner => {
               const logo = partner.image;
               if (logo === null) return;
@@ -98,7 +98,7 @@ function PartnersPage() {
                       href={partner.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="col-span-1 flex justify-center py-8 px-8 bg-gray-50"
+                      className="col-span-1 flex justify-center py-1 px-1 bg-gray-50"
                   >
                     {// https://github.com/gatsbyjs/gatsby/issues/10297#issuecomment-464834529
                       logo.extension === "svg" && !logo.childImageSharp ? (

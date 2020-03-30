@@ -186,7 +186,7 @@ function IndexPage() {
                     </div>
                     <div className="mt-3 sm:mt-0 sm:ml-3">
                       <Link
-                        to={pageContent.introduction.button2.link}
+                        to="en/faq"
                         className="w-full flex items-center justify-center px-8 py-3 no-underline font-normal border border-transparent text-base leading-6 font-medium rounded-md text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                       >
                         {pageContent.introduction.button2.title}
@@ -375,20 +375,24 @@ function IndexPage() {
                 ></div>
                 <div className="mt-8 sm:flex">
                   <div className="rounded-md shadow">
-                    <Link
-                      to={pageContent.partners.button1.link}
-                      className="flex items-center justify-center px-5 py-3 no-underline font-normal border border-transparent text-base leading-6 font-medium rounded-md text-white bg-japanese hover:text-japanese hover:bg-air-gray focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                    <a
+                        href={pageContent.partners.button1.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center px-5 py-3 no-underline font-normal border border-transparent text-base leading-6 font-medium rounded-md text-white bg-japanese hover:text-japanese hover:bg-air-gray focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                     >
                       {pageContent.partners.button1.title}
-                    </Link>
+                    </a>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <Link
-                      to={pageContent.partners.button2.link}
-                      className="flex items-center justify-center px-5 py-3 no-underline font-normal border border-transparent text-base leading-6 font-medium rounded-md text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out"
+                    <a
+                        href={pageContent.partners.button2.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center px-5 py-3 no-underline font-normal border border-transparent text-base leading-6 font-medium rounded-md text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out"
                     >
                       {pageContent.partners.button2.title}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

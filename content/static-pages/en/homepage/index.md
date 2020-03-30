@@ -28,11 +28,11 @@ partners:
     The study program of Technical Medicine was founded in 2014 by Delft University of Technology, in collaboration with Leiden University Medical Center and Erasmus Medical Center. The study program focuses on the gap between the worlds of engineering and medicine, as technologies applied within hospitals become more complex over time. Examples hereof are robotic surgery and decision support algorithms. Introduction and application of these technologies require a specialist with technical and medical insight. 
     A Technical Physician operates in the clinic and partakes in patient care. From this position they focus on the implementation and application of new technologies to improve patient care.
   button1:
-    title: Expert support
-    link: /en/about
+    title: BSc Clinical Technology
+    link: https://www.tudelft.nl/onderwijs/opleidingen/masters/technical-medicine/msc-technical-medicine/
   button2:
-    title: Contact
-    link: /en/contact
+    title: MSc Technical Medicine
+    link: https://www.tudelft.nl/onderwijs/opleidingen/masters/technical-medicine/msc-technical-medicine/
   logo_s:
     - title: Technische Universiteit Delft
       url: "https://www.tudelft.nl/"

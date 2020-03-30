@@ -99,26 +99,25 @@ function Header(en) {
                 </div>
               </div>
               <div className="hidden md:block text-right">
-            <span className="inline-flex rounded-md shadow-md">
-              <span className="inline-flex rounded-md shadow-xs">
-                <Link
-                    to="/en/contact"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                >
-                  Contact
-                </Link>
-              </span>
-            </span>
+                <span className="inline-flex rounded-md shadow-md">
+                  <span className="inline-flex rounded-md shadow-xs">
+                    <Link
+                        to="/en/contact"
+                        className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                    >
+                      Contact
+                    </Link>
+                  </span>
+                </span>
               </div>
-              <div className="hidden md:block text-right">
-                <span className="inline-flex rounded-md shadow-md" style={{marginLeft: '100px'}}>
+              <div className="hidden md:block text-right" style={{marginLeft: "30px"}}>
+                <span className="inline-flex rounded-md shadow-md">
                   <span className="inline-flex rounded-md shadow-xs">
                     <Link
                         to="/"
-                        className="hover:bg-gray-50 transition duration-150 ease-in-out"
-                        style={{color: 'white', width: '40px'}}
+                        className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                     >
-                      <img src={'/assets/NL.png'} width={'40px'}/>
+                      Nederlands
                     </Link>
                   </span>
                 </span>
@@ -183,6 +182,13 @@ function Header(en) {
                           {link.title}
                         </a>
                     ))}
+                    <a
+                        key={-1}
+                        href="/"
+                        className={`block px-3 py-2 rounded-md text-base font-medium text-gray-100 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                    >
+                      Nederlands
+                    </a>
                   </div>
                   <div>
                     <Link
@@ -206,6 +212,7 @@ function Header(en) {
           <nav className="w-full bg-japanese py-2 md:py-3">
             <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6">
               <div className="flex items-center flex-1">
+
                 <div className="flex items-center justify-between w-full md:w-auto">
                   <Link to="/">
                     <img
@@ -263,15 +270,14 @@ function Header(en) {
               </span>
             </span>
               </div>
-              <div className="hidden md:block text-right">
-                <span className="inline-flex rounded-md shadow-md" style={{marginLeft: '100px'}}>
+              <div className="hidden md:block text-right" style={{marginLeft: "30px"}}>
+                <span className="inline-flex rounded-md shadow-md">
                   <span className="inline-flex rounded-md shadow-xs">
                     <Link
                         to="/en"
-                        className="hover:bg-gray-50 transition duration-150 ease-in-out"
-                        style={{color: 'white', width: '40px'}}
+                        className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-japanese bg-almond hover:bg-gray-50 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                     >
-                      <img src={'/assets/EN.png'} width={'40px'}/>
+                      English
                     </Link>
                   </span>
                 </span>
@@ -336,6 +342,13 @@ function Header(en) {
                           {link.title}
                         </a>
                     ))}
+                    <a
+                        key={-1}
+                        href="/en"
+                        className={`block px-3 py-2 rounded-md text-base font-medium text-gray-100 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                    >
+                      English
+                    </a>
                   </div>
                   <div>
                     <Link

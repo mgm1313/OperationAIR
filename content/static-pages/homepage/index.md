@@ -39,11 +39,11 @@ partners:
     nieuwe technieken implementeren en toepassen in het ziekenhuis, terwijl ze
     dicht bij de patiëntenzorg blijven.
   button1:
-    title: Expert support
-    link: /over
+    title: BSc Klinische Technologie
+    link: https://www.tudelft.nl/onderwijs/opleidingen/masters/technical-medicine/msc-technical-medicine/
   button2:
-    title: Contact opnemen
-    link: /contact
+    title: MSc Technical Medicine
+    link: https://www.tudelft.nl/onderwijs/opleidingen/masters/technical-medicine/msc-technical-medicine/
   logo_s:
     - title: Technische Universiteit Delft
       url: 'https://www.tudelft.nl/'
