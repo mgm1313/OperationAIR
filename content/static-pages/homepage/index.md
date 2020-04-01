@@ -15,8 +15,8 @@ introduction:
     title: Ga naar FAQ
     link: /veelgestelde-vragen
   video:
-    youtubeID: "399833473"
-    subtitle: "Bron: Nieuwsuur (vrijdag 20 maart 2020)"
+    youtubeID: '399833473'
+    subtitle: 'Bron: Nieuwsuur (vrijdag 20 maart 2020)'
 blog:
   title: De laatste ontwikkelingen
   introduction: >-
@@ -36,10 +36,12 @@ partners:
     dicht bij de patiëntenzorg blijven.
   button1:
     title: BSc Klinische Technologie
-    link: https://www.tudelft.nl/onderwijs/opleidingen/masters/technical-medicine/msc-technical-medicine/
+    link: >-
+      https://www.tudelft.nl/onderwijs/opleidingen/bachelors/kt/bsc-klinische-technologie/
   button2:
     title: MSc Technical Medicine
-    link: https://www.tudelft.nl/onderwijs/opleidingen/masters/technical-medicine/msc-technical-medicine/
+    link: >-
+      https://www.tudelft.nl/onderwijs/opleidingen/masters/technical-medicine/msc-technical-medicine/
   logo_s:
     - title: Technische Universiteit Delft
       url: 'https://www.tudelft.nl/'
