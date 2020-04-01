@@ -29,7 +29,7 @@ partners:
     A Technical Physician operates in the clinic and partakes in patient care. From this position they focus on the implementation and application of new technologies to improve patient care.
   button1:
     title: BSc Clinical Technology
-    link: https://www.tudelft.nl/onderwijs/opleidingen/masters/technical-medicine/msc-technical-medicine/
+    link: https://www.tudelft.nl/onderwijs/opleidingen/bachelors/kt/bsc-klinische-technologie/
   button2:
     title: MSc Technical Medicine
     link: https://www.tudelft.nl/onderwijs/opleidingen/masters/technical-medicine/msc-technical-medicine/
