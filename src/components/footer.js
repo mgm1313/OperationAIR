@@ -18,6 +18,7 @@ function Footer(en = false) {
             socialLinks {
               name
               link
+              viewport
               path
             }
             footerMenu {
@@ -88,7 +89,7 @@ function Footer(en = false) {
                             <svg
                                 className="h-6 w-6"
                                 fill="currentColor"
-                                viewBox="0 0 20 20"
+                                viewBox={social.viewport}
                                 dangerouslySetInnerHTML={{__html: social.path}}
                             ></svg>
                           </a>
@@ -230,7 +231,7 @@ function Footer(en = false) {
                             <svg
                                 className="h-6 w-6"
                                 fill="currentColor"
-                                viewBox="0 0 20 20"
+                                viewBox={social.viewport}
                                 dangerouslySetInnerHTML={{__html: social.path}}
                             ></svg>
                           </a>

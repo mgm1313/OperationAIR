@@ -297,7 +297,7 @@ function IndexPage() {
             return (
               <Link
                 key={edge.node.name}
-                to={`/ontwikkelingen/${edge.node.name}`}
+                to={`/en/developments/${edge.node.name}`}
                 className={`block group no-underline font-normal ${index >= 1 &&
                   `mt-4 sm:mt-0`}`}
               >
