@@ -16,20 +16,23 @@ partners:
   logo_t:
     - title: Bronkhorst
       url: "https://www.bronkhorst.com/nl-nl/"
-      image: /assets/BRONKHORST-FLOW-TECHNOLOGY-SQUARE.png
+      image: /assets/Bronkhorst.png
     - title: IDE Groep
       url: "https://www.idegroup.com.au/"
-      image: /assets/IDEGroup.png
+      image: /assets/IDE.png
     - title: Jitter
       url: "https://jitter.company/"
-      image: /assets/Jitter-logo.png
+      image: /assets/Jitter.png
     - title: Matrix Requirements
       url: "www.matrixreq.com"
-      image: /assets/logo8.png
+    - title: MTB 3D
+      url: "https://www.mtb3d.com/"
+      image: /assets/MTB3D.png
+      image: /assets/Matrix.png
     - title: NiVoGe Groep
       url: "https://www.nivoge-groep.nl/"
-      image: /assets/NiVoGeLogo.png
+      image: /assets/Nivoge.png
     - title: Pressure Control Solutions
       url: "https://www.pressurecontrolsolutions.nl/"
-      image: /assets/logo-PCS.png
+      image: /assets/PCS.png
 ---
