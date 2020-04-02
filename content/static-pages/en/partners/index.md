@@ -25,10 +25,10 @@ partners:
       image: /assets/Jitter.png
     - title: Matrix Requirements
       url: "www.matrixreq.com"
+      image: /assets/Matrix.png
     - title: MTB 3D
       url: "https://www.mtb3d.com/"
       image: /assets/MTB3D.png
-      image: /assets/Matrix.png
     - title: NiVoGe Groep
       url: "https://www.nivoge-groep.nl/"
       image: /assets/Nivoge.png
