@@ -37,7 +37,7 @@ partners:
   button1:
     title: BSc Klinische Technologie
     link: >-
-      https://www.tudelft.nl/studenten/faculteiten/3me-studentenportal/onderwijs/bachelor/bsc-klinische-technologie/
+      https://www.tudelft.nl/onderwijs/opleidingen/bachelors/kt/bsc-klinische-technologie/
   button2:
     title: MSc Technical Medicine
     link: >-
