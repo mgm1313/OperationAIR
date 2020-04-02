@@ -36,10 +36,12 @@ partners:
     dicht bij de patiëntenzorg blijven.
   button1:
     title: BSc Klinische Technologie
-    link: https://www.tudelft.nl/onderwijs/opleidingen/bachelors/kt/bsc-klinische-technologie/
+    link: >-
+      https://www.tudelft.nl/studenten/faculteiten/3me-studentenportal/onderwijs/bachelor/bsc-klinische-technologie/
   button2:
     title: MSc Technical Medicine
-    link: https://www.tudelft.nl/onderwijs/opleidingen/masters/technical-medicine/msc-technical-medicine/
+    link: >-
+      https://www.tudelft.nl/onderwijs/opleidingen/masters/technical-medicine/msc-technical-medicine/
   logo_s:
     - title: Technische Universiteit Delft
       url: 'https://www.tudelft.nl/'
