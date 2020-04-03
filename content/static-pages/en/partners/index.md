@@ -20,11 +20,17 @@ partners:
     - title: IDE Groep
       url: "https://www.idegroup.com.au/"
       image: /assets/IDE.png
+    - title: Interay
+      url: "https://www.interay.com/"
+      image: /assets/Interay.png
     - title: Jitter
       url: "https://jitter.company/"
       image: /assets/Jitter.png
+    - title: LarGe Solutions
+      url: "https://www.large-solutions.com/"
+      image: /assets/LarGeSolutions.png
     - title: Matrix Requirements
-      url: "www.matrixreq.com"
+      url: "http://www.matrixreq.com/"
       image: /assets/Matrix.png
     - title: MTB 3D
       url: "https://www.mtb3d.com/"
@@ -35,4 +41,7 @@ partners:
     - title: Pressure Control Solutions
       url: "https://www.pressurecontrolsolutions.nl/"
       image: /assets/PCS.png
+    - title: TNO
+      url: "https://www.tno.nl/nl/"
+      image: /assets/TNO.png
 ---
