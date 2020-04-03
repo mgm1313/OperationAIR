@@ -147,18 +147,18 @@ function PartnersPage() {
                                                 href={partner.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="col-span-1 flex justify-center py-8 px-8 bg-gray-50"
+                                                className="col-span-1 flex justify-center py-3 px-0 bg-gray-50"
                                             >
                                                 {// https://github.com/gatsbyjs/gatsby/issues/10297#issuecomment-464834529
                                                     logo.extension === "svg" && !logo.childImageSharp ? (
                                                         <img
-                                                            className="max-h-12"
+                                                            className="max-h-16"
                                                             src={logo.publicURL}
                                                             alt={partner.title}
                                                         />
                                                     ) : (
                                                         <Img
-                                                            className="max-h-12 w-full"
+                                                            className="max-h-16 w-full"
                                                             imgStyle={{ objectFit: "contain" }}
                                                             fluid={logo.childImageSharp.fluid}
                                                             alt={partner.title}
