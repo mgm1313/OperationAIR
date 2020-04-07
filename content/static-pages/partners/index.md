@@ -35,12 +35,21 @@ partners:
     - title: MTB 3D
       url: "https://www.mtb3d.com/"
       image: /assets/MTB3D.png
+    - title: Nederlandse spoorwegen
+      url: "https://www.ns.nl/"
+      image: /assets/Nederlandse_Spoorwegen.png
     - title: NiVoGe Groep
       url: "https://www.nivoge-groep.nl/"
       image: /assets/Nivoge.png
     - title: Pressure Control Solutions
       url: "https://www.pressurecontrolsolutions.nl/"
       image: /assets/PCS.png
+    - title: Shell
+      url: "https://www.shell.com/"
+      image: /assets/Shell.png
+    - title: Telerex
+      url: "https://www.telerex-europe.com/"
+      image: /assets/Telerex.png
     - title: TNO
       url: "https://www.tno.nl/nl/"
       image: /assets/TNO.png
