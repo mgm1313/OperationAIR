@@ -31,10 +31,10 @@ Met behulp van de MoSCoW methode heeft het team van OperationAIR het Programma v
         - Adjustable settings:  
         <div class="pl-3">
           + Freq. 30/min <br />
-          + Tv 300 - 700 mL<sup>\\\\[1]</sup> <br />
+          + Tv 300 - 700 mL<sup>\\\\\[1]</sup> <br />
           + Pplat < 35 cmH2O <br />
           + Pressure controlled <br />
-          + 15cm H2O PEEP<sup>\\\\[2]</sup> <br />
+          + 15cm H2O PEEP<sup>\\\\\[2]</sup> <br />
           + FiO2 → 100% <br />
           + I:E → 1:2 <br />
           + inspiratory flow 1.5L/s
@@ -107,7 +107,7 @@ Met behulp van de MoSCoW methode heeft het team van OperationAIR het Programma v
   </thead>
   <tr class="align-top">
     <td class="px-4 py-2 whitespace-no-wrap border-r border-gray-200"> 
-        - Visualisation (V, P and flow) curves+getallen <br /> 
+        - Visualisation (V, P and flow) curves+values<br /> 
         - Alarming (when, how and adjustability) <br />
         - Low/high airway pressure (Paw) <br />
         - Low expiratory minute volume(MVe) <br />
@@ -120,7 +120,7 @@ Met behulp van de MoSCoW methode heeft het team van OperationAIR het Programma v
         - Capnogram visualisation
     </td>
     <td class="px-4 py-2 whitespace-no-wrap border-r border-gray-200">
-        - trends (4, 12 & 24 uur)
+        - trends (4, 12 & 24 hours)
     </td>
     <td class="px-4 py-2 whitespace-no-wrap border-r border-gray-200"></td>
   </tr>
