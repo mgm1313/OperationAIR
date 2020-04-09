@@ -13,4 +13,16 @@ Hieronder vindt u specifieke producten en/of diensten waar wij momenteel naar op
 
 Voor overige bijdragen en expertise verwijzen we u graag verder naar onze [contactpagina](/contact). <br/><br/><hr/><br/>
 
-**Momenteel zijn wij niet op zoek naar specifieke producten of expertise.**
+**Proportioneel magneetventiel**
+
+* Direct-acting 2 way standard solenoid control valve
+* Voorkeur: Bürkert type 2875
+* Specificaties:
+
+  * Doorlaat minimaal 8 mm
+  * Responstijd <50ms
+  * Hoge flow coëfficiënt (Kv > 1)
+  * 24V operation
+  * Gemaakt van messing of roestvrij staal
+
+![](/assets/schermafbeelding-2020-04-09-om-13.24.04.png)
