@@ -15,9 +15,9 @@ Voor overige bijdragen en expertise verwijzen we u graag verder naar onze [conta
 
 **Proportioneel magneetventiel**
 
-* Direct-acting 2 way standard solenoid control valve
-* Voorkeur: Bürkert type 2875
-* Specificaties:
+* *Type:* Direct-acting 2 way standard solenoid control valve
+* *Voorkeur:* Bürkert type 2875
+* *Specificaties:*
 
   * Doorlaat minimaal 8 mm
   * Responstijd <50ms
