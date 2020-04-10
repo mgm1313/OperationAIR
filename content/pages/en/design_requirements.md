@@ -108,7 +108,7 @@ seo:
   </thead>
   <tr class="align-top">
     <td class="px-4 py-2 whitespace-no-wrap border-r border-gray-200"> 
-        - Visualisation (V, P and flow) curves+getallen <br /> 
+        - Visualisation (V, P and flow) curves+values <br /> 
         - Alarming (when, how and adjustability) <br />
         - Low/high airway pressure (Paw) <br />
         - Low expiratory minute volume(MVe) <br />
@@ -121,7 +121,7 @@ seo:
         - Capnogram visualisation
     </td>
     <td class="px-4 py-2 whitespace-no-wrap border-r border-gray-200">
-        - trends (4, 12 & 24 uur)
+        - trends (4, 12 & 24 hours)
     </td>
     <td class="px-4 py-2 whitespace-no-wrap border-r border-gray-200"></td>
   </tr>

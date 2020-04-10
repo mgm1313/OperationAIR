@@ -1,5 +1,5 @@
 ---
-slug: /hetontwerp
+slug: hetontwerp
 title: Het Ontwerp
 seo:
   browserTitle: Het Ontwerp

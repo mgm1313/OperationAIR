@@ -6,7 +6,7 @@ menuItems_nl:
     route: /team
   - title: Ontwikkelingen
     route: /ontwikkelingen
-  - title: Ontwerpeisen
+  - title: AIRone
     route: /ontwerpeisen
   - title: Partners
     route: /partners
@@ -15,6 +15,12 @@ menuItems_nl:
   - title: FAQ
     route: /veelgestelde-vragen
     
+menuDropdown_nl_AIRone:
+  - title: Het Ontwerp
+    route: /hetontwerp
+  - title: Ontwerpeisen
+    route: /ontwerpeisen
+    
 menuItems_en:
   - title: About
     route: /en/about
@@ -22,7 +28,7 @@ menuItems_en:
     route: /en/team
   - title: Developments
     route: /en/developments
-  - title: Design Requirements
+  - title: AIRone
     route: /en/design_requirements
   - title: Partners
     route: /en/partners
@@ -30,4 +36,10 @@ menuItems_en:
     route: /en/contribute
   - title: FAQ
     route: /en/faq
+    
+menuDropdown_en_AIRone:
+  - title: The Design
+    route: /en/thedesign
+  - title: Design Requirements
+    route: /en/design_requirements
 ---
