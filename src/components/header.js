@@ -8,6 +8,7 @@ import Transition from "./utils/transition";
 import headerLogoNegative from "../images/logo-negative.svg";
 
 function Header(en) {
+
   let data = useStaticQuery(graphql`
     {
       file(
@@ -31,7 +32,35 @@ function Header(en) {
       ) {
         childMarkdownRemark {
           frontmatter {
+            menuDropdown_nl_AIRone {
+              title
+              route
+            }
+          }
+        }
+      }
+      file(
+        sourceInstanceName: { eq: "components" }
+        internal: { mediaType: { eq: "text/markdown" } }
+        name: { eq: "header" }
+      ) {
+        childMarkdownRemark {
+          frontmatter {
             menuItems_en {
+              title
+              route
+            }
+          }
+        }
+      }
+      file(
+        sourceInstanceName: { eq: "components" }
+        internal: { mediaType: { eq: "text/markdown" } }
+        name: { eq: "header" }
+      ) {
+        childMarkdownRemark {
+          frontmatter {
+            menuDropdown_en_AIRone {
               title
               route
             }
@@ -45,8 +74,10 @@ function Header(en) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   let menuItems = [];
+  let menuDropdown_AIRone = [];
   if (en.en) {
     menuItems = data.file.childMarkdownRemark.frontmatter.menuItems_en;
+    menuDropdown_AIRone = data.file.childMarkdownRemark.frontmatter.menuDropdown_en_AIRone;
 
     return (
         <header className="sticky top-0 z-20">
@@ -84,8 +115,21 @@ function Header(en) {
                   </div>
                 </div>
                 <div className="hidden md:block md:ml-10">
-                  {menuItems.map((link, index) => (
-                      <Link
+                  {menuItems.map((link, index) => {
+                    if (index === 3)
+                      return <div
+                          id = 'dropdownParent'
+                          key={index}
+                          onMouseEnter={() => showDropDown()}
+                          onMouseLeave={() => hideDropdown()}
+                          className={`dd-wrapper inline-block rounded-lg leading-none py-2 px-3 font-medium text-gray-50 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                      >
+                        <div className="dd-header">
+                          <div className="dd-header-title">{link.title}</div>
+                        </div>
+                      </div>
+                    else
+                      return <Link
                           key={index}
                           to={link.route}
                           partiallyActive={true}
@@ -95,7 +139,30 @@ function Header(en) {
                       >
                         {link.title}
                       </Link>
-                  ))}
+                  })}
+                </div>
+                <div id="dropdownList"
+                     onMouseEnter={() => showDropDown()}
+                     onMouseLeave={() => hideDropdown()}
+                     className={`inline-block rounded-lg leading-none py-2 px-3 font-medium text-gray-50 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                     style={{display: "none", position: "absolute", left: "0px", top: "0px", backgroundColor: "#263655"}}>
+                  <ul className="dd-list">
+                    {menuDropdown_AIRone.map((link, index) => {
+                      return <li
+                          key={index}
+                          style={{paddingBottom: "10px"}}>
+                        <Link
+                            key={index}
+                            to={link.route}
+                            partiallyActive={true}
+                            activeClassName="underline"
+                            className={`inline-block rounded-lg leading-none py-2 px-3 font-medium text-gray-50 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                        >
+                          {link.title}
+                        </Link>
+                      </li>
+                    })}
+                  </ul>
                 </div>
               </div>
               <div className="hidden md:block text-right">
@@ -172,8 +239,23 @@ function Header(en) {
                     </div>
                   </div>
                   <div className="px-2 pt-2 pb-3">
-                    {menuItems.map((link, index) => (
-                        <a
+                    {menuItems.map((link, index) => {
+                      if (index === 3){
+                        return <a key={{index}}>
+                        {menuDropdown_AIRone.map((link,index) =>{
+
+                          return <a
+                              key={index}
+                              href={link.route}
+                              className={`${index >= 1 &&
+                              `mt-1`} block px-3 py-2 rounded-md text-base font-medium text-gray-100 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                          >
+                            {link.title}
+                          </a>
+                        })}
+                        </a>
+                      } else {
+                        return <a
                             key={index}
                             href={link.route}
                             className={`${index >= 1 &&
@@ -181,7 +263,9 @@ function Header(en) {
                         >
                           {link.title}
                         </a>
-                    ))}
+                      }
+
+                    })}
                     <a
                         key={-1}
                         href="/"
@@ -207,6 +291,7 @@ function Header(en) {
   }
   else {
     menuItems = data.file.childMarkdownRemark.frontmatter.menuItems_nl;
+    menuDropdown_AIRone = data.file.childMarkdownRemark.frontmatter.menuDropdown_nl_AIRone;
     return (
         <header className="sticky top-0 z-20">
           <nav className="w-full bg-japanese py-2 md:py-3">
@@ -244,8 +329,21 @@ function Header(en) {
                   </div>
                 </div>
                 <div className="hidden md:block md:ml-10">
-                  {menuItems.map((link, index) => (
-                      <Link
+                  {menuItems.map((link, index) => {
+                    if (index === 3)
+                      return <div
+                          id = 'dropdownParent'
+                          key={index}
+                          onMouseEnter={() => showDropDown()}
+                          onMouseLeave={() => hideDropdown()}
+                          className={`dd-wrapper inline-block rounded-lg leading-none py-2 px-3 font-medium text-gray-50 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                      >
+                        <div className="dd-header">
+                          <div className="dd-header-title">{link.title}</div>
+                        </div>
+                      </div>
+                    else
+                      return <Link
                           key={index}
                           to={link.route}
                           partiallyActive={true}
@@ -255,7 +353,30 @@ function Header(en) {
                       >
                         {link.title}
                       </Link>
-                  ))}
+                  })}
+                </div>
+                <div id="dropdownList"
+                     onMouseEnter={() => showDropDown()}
+                     onMouseLeave={() => hideDropdown()}
+                     className={`inline-block rounded-lg leading-none py-2 px-3 font-medium text-gray-50 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                     style={{display: "none", position: "absolute", left: "0px", top: "0px", backgroundColor: "#263655"}}>
+                  <ul className="dd-list">
+                    {menuDropdown_AIRone.map((link, index) => {
+                       return <li
+                           key={index}
+                           style={{paddingBottom: "10px"}}>
+                         <Link
+                             key={index}
+                             to={link.route}
+                             partiallyActive={true}
+                             activeClassName="underline"
+                             className={`inline-block rounded-lg leading-none py-2 px-3 font-medium text-gray-50 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                         >
+                           {link.title}
+                         </Link>
+                       </li>
+                    })}
+                  </ul>
                 </div>
               </div>
               <div className="hidden md:block text-right">
@@ -332,8 +453,23 @@ function Header(en) {
                     </div>
                   </div>
                   <div className="px-2 pt-2 pb-3">
-                    {menuItems.map((link, index) => (
-                        <a
+                    {menuItems.map((link, index) => {
+                      if (index === 3){
+                        return <a key={{index}}>
+                          {menuDropdown_AIRone.map((link,index) =>{
+
+                            return <a
+                                key={index}
+                                href={link.route}
+                                className={`${index >= 1 &&
+                                `mt-1`} block px-3 py-2 rounded-md text-base font-medium text-gray-100 hover:bg-ucla focus:outline-none focus:bg-ucla transition duration-150 ease-in-out`}
+                            >
+                              {link.title}
+                            </a>
+                          })}
+                        </a>
+                      } else {
+                        return <a
                             key={index}
                             href={link.route}
                             className={`${index >= 1 &&
@@ -341,7 +477,9 @@ function Header(en) {
                         >
                           {link.title}
                         </a>
-                    ))}
+                      }
+
+                    })}
                     <a
                         key={-1}
                         href="/en"
@@ -373,3 +511,17 @@ Header.propTypes = {
 };
 
 export default Header;
+
+function showDropDown(){
+  let dropdownParent = document.getElementById('dropdownParent');
+  let dropdownList = document.getElementById('dropdownList');
+  dropdownList.style.left = dropdownParent.offsetLeft + "px";
+  dropdownList.style.top = (dropdownParent.offsetTop + dropdownParent.offsetHeight).toString() + "px";
+  dropdownList.style.width = (dropdownParent.offsetWidth * 2) + "px";
+  dropdownList.style.display = "";
+}
+
+function hideDropdown(){
+  let dropdownList = document.getElementById('dropdownList');
+  dropdownList.style.display = 'none';
+}

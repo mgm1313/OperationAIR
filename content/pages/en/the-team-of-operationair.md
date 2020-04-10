@@ -4,7 +4,7 @@ title: The team of OperationAIR
 seo:
   browserTitle: Team of OperationAIR
   description: >-
-    OperationAIR is een non-profit studententeam bestaande uit 35 studenten. Het
+    OperationAIR is een non-profit studententeam bestaande uit 50 studenten. Het
     team is opgezet door prof. dr. ir. Jaap Harlaar, opleidingsdirecteur van
     Technical Medicine, samen met studenten Technical Medicine.
 ---
@@ -13,7 +13,7 @@ seo:
 ![](/assets/operationair-group.jpg "Team OperationAIR (Disclaimer: This photo was taken before the social distancing measurement)")
 
 \
-OperationAIR is a non-profit student team, consisting of 35 studentens from Delft University of Technology. The initiative was started by prof. dr.ir. Jaap Harlaar, director of the educational program Technical Medicine, and students MSc Technical Medicine. In the meantime, the team has become multi-disciplinary with the addition of students Biomedial Enineering, Industrial Design, Applied Physics and Electrical Engineering. All participants of OperationAIR work with great enthusiasm on a volunteer basis, without conflict of interest.
+OperationAIR is a non-profit student team, consisting of 50 studentens from Delft University of Technology. The initiative was started by prof. dr.ir. Jaap Harlaar, director of the educational program Technical Medicine, and students MSc Technical Medicine. In the meantime, the team has become multidisciplinary with the addition of students Biomedial Enineering, Industrial Design, Applied Physics and Electrical Engineering. All participants of OperationAIR work with great enthusiasm on a volunteer basis, without conflict of interest.
 
 ## Subteams
 

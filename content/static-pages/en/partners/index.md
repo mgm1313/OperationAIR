@@ -14,9 +14,15 @@ partners:
       url: "https://www.erasmusmc.nl/"
       image: /assets/erasmus.png
   logo_t:
+    - title: Applied Biosignals
+      url: "http://www.appliedbiosignals.com/"
+      image: /assets/Applied_Biosignals.png
     - title: Bronkhorst
       url: "https://www.bronkhorst.com/nl-nl/"
       image: /assets/Bronkhorst.png
+    - title: Deloitte
+      url: "https://www2.deloitte.com/nl/nl.html"
+      image: /assets/Deloitte.png
     - title: IDE Groep
       url: "https://www.idegroup.com.au/"
       image: /assets/IDE.png
@@ -26,9 +32,15 @@ partners:
     - title: Jitter
       url: "https://jitter.company/"
       image: /assets/Jitter.png
+    - title: Jonker Makis Robotics
+      url: "https://jonkermakisrobotics.com/"
+      image: /assets/JMR.png
     - title: LarGe Solutions
       url: "https://www.large-solutions.com/"
       image: /assets/LarGeSolutions.png
+    - title: Leering
+      url: "https://www.leering.nl/"
+      image: /assets/Leering.png
     - title: Matrix Requirements
       url: "http://www.matrixreq.com/"
       image: /assets/Matrix.png
@@ -47,10 +59,16 @@ partners:
     - title: Shell
       url: "https://www.shell.com/"
       image: /assets/Shell.png
+    - title: Technolution
+      url: "https://www.technolution.eu/en/industry/"
+      image: /assets/Technolution.png
     - title: Telerex
       url: "https://www.telerex-europe.com/"
       image: /assets/Telerex.png
     - title: TNO
       url: "https://www.tno.nl/nl/"
       image: /assets/TNO.png
+    - title: VP Instruments
+      url: "www.vpinstruments.com"
+      image: /assets/VP_Instruments.png
 ---

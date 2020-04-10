@@ -14,7 +14,7 @@ seo:
 
 # About OperationAIR
 
-OperationAIR - Assist In Respiration - is a student team of the TU Delft that tries to develop a simple and relatively cheap ventilator that can serve as an emergency solution when a shortage occurs due to the coronavirus pandemic. The situation in Italy has shown that the outbreak can lead to a shortage of ventilators for patients that are in need of intensive care. Doctors are then required to consider how to distribute the ventilators. The patients that do not receive artificial respiration, have an increased risk of death. For this patient population we want to provide an emergency solution. That is why the initiative of OperationAIR was started on March 16, 2020.
+OperationAIR - Assist In Respiration - is a student team of the TU Delft that tries to develop a safe and relatively easy producible ventilator that can serve as an emergency solution when a shortage occurs due to the coronavirus pandemic. The situation in Italy has shown that the outbreak can lead to a shortage of ventilators for patients that are in need of intensive care. Doctors are then required to consider how to distribute the ventilators. The patients that do not receive artificial respiration, have an increased risk of death. For this patient population we want to provide an emergency solution. That is why the initiative of OperationAIR was started on March 16, 2020.
 
 ## Vision
 
