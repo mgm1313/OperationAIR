@@ -20,11 +20,11 @@ Het apparaat wat wij ontwikkelen, de AIRone, is een beademingsapparaat dat kan w
 
 Met ons systeem kan gestuurd worden op de klinische conditie van de patiënt. Via een touchscreen (degraphic user interface) kunnen artsen en verpleegkundigen het volgende instellen:
 
-* Ademfrequentie (RR)
-* Inspiratie/expiratie ratio (I/E ratio)
-* Beademingsdruk (Pinsp)
-* Post end-expiratory pressure (PEEP)
-* Zuurstofconcentratie (FiO2)
+   * Ademfrequentie (RR)
+   * Inspiratie/expiratie ratio (I/E ratio)
+   * Beademingsdruk (Pinsp)
+   * Post end-expiratory pressure (PEEP)
+   * Zuurstofconcentratie (FiO2)
 
 Intussen laat het scherm de volume-, druk- en flow-curves zien, die noodzakelijk zijn voor het beoordelen van de klinische conditie van de patiënt.
 
