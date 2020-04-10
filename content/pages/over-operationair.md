@@ -5,9 +5,9 @@ seo:
   browserTitle: Over OperationAIR
   description: >-
     OperationAIR - Assist In Respiration - is een studententeam van de TU Delft
-    dat zich bezighoudt met het ontwikkelen van een simpel en relatief goedkoop
-    beademingsapparaat om mogelijke tekorten op te vangen die ontstaan door de
-    coronacrisis.
+    dat zich bezighoudt met het ontwikkelen van een versimpeld en relatief
+    makkelijk opschaalbaar beademingsapparaat om mogelijke tekorten op te vangen
+    die ontstaan door de coronacrisis.
 ---
 ![Operation Air Logo](/assets/kopje_over.png)
 
@@ -15,7 +15,7 @@ seo:
 
 # Over OperationAIR
 
-OperationAIR - Assist In Respiration - is een studententeam van de TU Delft dat zich bezighoudt met het ontwikkelen van een simpel en relatief goedkoop beademingsapparaat om mogelijke tekorten op te vangen die ontstaan door de coronacrisis. Van de situatie in Italië hebben we geleerd dat de uitbraak kan leiden tot een tekort aan beademingsapparatuur voor patiënten die intensieve zorg nodig hebben. Om deze reden worden artsen gedwongen een keuze te maken voor wie beademingsapparatuur beschikbaar wordt gesteld. De patiënten die niet worden beademd, hebben een grote kans op overlijden. Wij willen een noodoplossing bieden voor juist deze patiëntenpopulatie. Daarom is op 16 maart 2020 OperationAIR in het leven geroepen.
+OperationAIR - Assist In Respiration - is een studententeam van de TU Delft dat zich bezighoudt met het ontwikkelen van een versimpeld en relatief makkelijk opschaalbaar beademingsapparaat om mogelijke tekorten op te vangen die ontstaan door de coronacrisis. Van de situatie in Italië hebben we geleerd dat de uitbraak kan leiden tot een tekort aan beademingsapparatuur voor patiënten die intensieve zorg nodig hebben. Om deze reden worden artsen gedwongen een keuze te maken voor wie beademingsapparatuur beschikbaar wordt gesteld. De patiënten die niet worden beademd, hebben een grote kans op overlijden. Wij willen een noodoplossing bieden voor juist deze patiëntenpopulatie. Daarom is op 16 maart 2020 OperationAIR in het leven geroepen.
 
 ## Visie
 
@@ -38,7 +38,5 @@ Nationaal en internationaal zijn er veel initiatieven gestart om goedkope beadem
 ## Expert support
 
 OperationAIR heeft dagelijks contact met intensivisten en technisch geneeskundigen uit het Leids Universitair Medisch Centrum (LUMC) en het Erasmus Medisch Centrum (EMC) over de actuele situatie op de intensive care afdelingen aldaar. Daarnaast is er contact geweest met de TU Eindhoven over de verwachte groei van het aantal coronapatiënten en de noodzaak voor een oplossing. Om de ontwikkeling van het beademingsapparaat te optimaliseren heeft het team ook contact met verschillende bedrijven en instanties. 
-
-
 
 <!--EndFragment-->
