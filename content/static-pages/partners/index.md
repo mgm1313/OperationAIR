@@ -23,6 +23,9 @@ partners:
     - title: Deloitte
       url: "https://www2.deloitte.com/nl/nl.html"
       image: /assets/Deloitte.png
+    - title: Diks Autoverhuur
+      url: "https://diks.net/"
+      image: /assets/Diks_Autoverhuur.png
     - title: IDE Groep
       url: "https://www.idegroup.com.au/"
       image: /assets/IDE.png
@@ -34,10 +37,10 @@ partners:
       image: /assets/Jitter.png
     - title: Jonker Makis Robotics
       url: "https://jonkermakisrobotics.com/"
-      image: /assets/JMR.png
+      image: /assets/Jonker_Makis_Robotics.png
     - title: LarGe Solutions
       url: "https://www.large-solutions.com/"
-      image: /assets/LarGeSolutions.png
+      image: /assets/LarGe_Solutions.png
     - title: Leering
       url: "https://www.leering.nl/"
       image: /assets/Leering.png
@@ -47,12 +50,12 @@ partners:
     - title: MTB 3D
       url: "https://www.mtb3d.com/"
       image: /assets/MTB3D.png
-    - title: Nederlandse spoorwegen
-      url: "https://www.ns.nl/"
-      image: /assets/Nederlandse_Spoorwegen.png
     - title: NiVoGe Groep
       url: "https://www.nivoge-groep.nl/"
       image: /assets/Nivoge.png
+    - title: Nederlandse spoorwegen
+      url: "https://www.ns.nl/"
+      image: /assets/Nederlandse_Spoorwegen.png
     - title: Pressure Control Solutions
       url: "https://www.pressurecontrolsolutions.nl/"
       image: /assets/PCS.png
