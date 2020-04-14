@@ -197,40 +197,33 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Introduction text", name: "body", widget: "markdown" }
       - file: "content/static-pages/partners/index.md"
-        label: "test"
+        label: "Partners"
         name: "Partners"
         fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Introduction text", name: "body", widget: "markdown" }
           - {
-            label: "Partners",
-             name: "partners",
-             widget: "object",
-             fields:
-               [
-               { label: "Title", name: "title", widget: "string" },
-               { label: "Introduction text", name: "body", widget: "markdown"},
-               {
-                 label: "Main logos",
-                 name: "logo_s",
-                 widget: "list",
-                 fields:
-                   [
-                   { label: "Title", name: "title", widget: "string" },
-                   { label: "Link to partner", name: "url", widget: "string" },
-                   { name: image, label: Logo file, widget: image, allow_multiple: false },
-                   ],
-               },
-               {
-                 label: "Partner logos",
-                 name: "logo_t",
-                 widget: "list",
-                 fields:
-                   [
-                   { label: "Title", name: "title", widget: "string" },
-                   { label: "Link to partner", name: "url", widget: "string" },
-                   { name: image, label: Logo file, widget: image, allow_multiple: false },
-                   ],
-               }
-               ]}
+            label: "University logo's",
+            name: "logo_s",
+            widget: "list",
+            fields:
+              [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Link to partner", name: "url", widget: "string" },
+              { name: image, label: Logo file, widget: image, allow_multiple: false },
+              ],
+          }
+          - {
+            label: "Partner logo's",
+            name: "logo_t",
+            widget: "list",
+            fields:
+              [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Link to partner", name: "url", widget: "string" },
+              { name: image, label: Logo file, widget: image, allow_multiple: false },
+              ],
+          }
   - name: "staticPages_EN"
     label: "Static Pages [EN]"
     editor:
@@ -356,40 +349,33 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Introduction text", name: "body", widget: "markdown" }
       - file: "content/static-pages/en/partners/index.md"
-        label: "test"
+        label: "Partners"
         name: "Partners"
         fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Introduction text", name: "body", widget: "markdown" }
           - {
-            label: "Partners",
-            name: "partners",
-            widget: "object",
+            label: "University logo's",
+            name: "logo_s",
+            widget: "list",
             fields:
               [
               { label: "Title", name: "title", widget: "string" },
-              { label: "Introduction text", name: "body", widget: "markdown"},
-              {
-                label: "Main logos",
-                name: "logo_s",
-                widget: "list",
-                fields:
-                  [
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Link to partner", name: "url", widget: "string" },
-                  { name: image, label: Logo file, widget: image, allow_multiple: false },
-                  ],
-              },
-              {
-                label: "Partner logos",
-                name: "logo_t",
-                widget: "list",
-                fields:
-                  [
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Link to partner", name: "url", widget: "string" },
-                  { name: image, label: Logo file, widget: image, allow_multiple: false },
-                  ],
-              }
-              ]}
+              { label: "Link to partner", name: "url", widget: "string" },
+              { name: image, label: Logo file, widget: image, allow_multiple: false },
+              ],
+          }
+          - {
+            label: "Partner logo's",
+            name: "logo_t",
+            widget: "list",
+            fields:
+              [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Link to partner", name: "url", widget: "string" },
+              { name: image, label: Logo file, widget: image, allow_multiple: false },
+              ],
+          }
   - name: blog
     label: Blog
     folder: content/blog
