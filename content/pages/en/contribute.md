@@ -17,6 +17,6 @@ For other contributions and expertise, we would like to refer you to our [contac
 
 * *Type:* Direct-acting 2 way standard solenoid control valve
 * *Preference:* Bürkert type 2875git
-* *Specifications:* Throughput > 8 mm, Responsetime < 50ms, Flow coefficient Kv > 1, 24V operation, made of brass or stainless steel
+* *Specifications:* DM> 8 mm, Responsetime < 50ms, Flow coefficient Kv > 1, 24V operation, made of brass or stainless steel
 
 ![](/assets/schermafbeelding-2020-04-09-om-13.24.04.png)
