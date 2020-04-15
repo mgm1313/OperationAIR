@@ -1,6 +1,6 @@
 ---
 date: 2020-03-26T15:08:41.654Z
-title: PROTOTYPE IN DEVELOPMENT AND TESTING FASE
+title: Prototype in delevopment and testing fase
 featuredImg: /assets/design_team-26mrt-2.jpg
 ---
 <!--StartFragment-->
