@@ -15,7 +15,7 @@ introduction:
     title: Read the FAQ
     link: /en/faq
   video:
-    youtubeID: '407922568'
+    youtubeID: '''407922568'''
     subtitle: 'Source: Nieuwsuur (vrijdag 20 maart 2020)'
 blog:
   title: The latest developments
