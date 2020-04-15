@@ -243,7 +243,6 @@ function IndexPage() {
                             "https://vimeo.com/" +
                             pageContent.introduction.video.youtubeID
                           }
-                          light
                           controls
                           playIcon={
                             <div className="absolute inset-0 w-full h-full flex items-center justify-center">
