@@ -57,6 +57,9 @@ partners:
     - title: Pressure Control Solutions
       url: 'https://www.pressurecontrolsolutions.nl/'
       image: /assets/PCS.png
+    - title: Pulmotech
+      url: 'http://www.pulmo-tech.com/'
+      image: /assets/pulmotech.png
     - title: Shell
       url: 'https://www.shell.com/'
       image: /assets/Shell.png
@@ -72,8 +75,5 @@ partners:
     - title: VP Instruments
       url: www.vpinstruments.com
       image: /assets/VP_Instruments.png
-    - title: Pulmotech
-      url: 'http://www.pulmo-tech.com/'
-      image: /assets/pulmotech.png
 ---
 OperationAIR works closely with
