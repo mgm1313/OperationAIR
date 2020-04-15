@@ -15,7 +15,7 @@ introduction:
     title: Ga naar FAQ
     link: /veelgestelde-vragen
   video:
-    youtubeID: '"407922568"'
+    youtubeID: '407922568'
     subtitle: 'Bron: Nieuwsuur (maandag 13 april 2020)'
 blog:
   title: De laatste ontwikkelingen
