@@ -1,6 +1,6 @@
 ---
 date: 2020-03-16T15:50:20.036Z
-title: OPERATIONAIR HAS STARTED!
+title: OperationAIR has started!
 featuredImg: /assets/ontwikkelingen16_3.jpg
 ---
 
