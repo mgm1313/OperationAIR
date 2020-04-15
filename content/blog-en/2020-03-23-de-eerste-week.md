@@ -1,6 +1,6 @@
 ---
 date: 2020-03-20T15:07:06.377Z
-title: The First Week
+title: The first week
 featuredImg: /assets/featured.jpg
 ---
 The first week went by in no time. It has been amazing to receive so many positive reactions. On top of that, there have been experts who have helped us tremendously via email, phone or even in person in Delft. Special thanks to the intensivists Bram Schoe and Sesmu Arbous, DEMCON, Willem Mees van der Bijl from IDE Group and all other experts who have helped us this week. With their help we have been able to get more insight into the course of disease of the coronavirus, the production of a breathing machine and the realisation of a new product.
