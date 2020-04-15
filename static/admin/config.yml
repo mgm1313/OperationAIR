@@ -17,14 +17,44 @@ collections:
         label: "Header"
         name: "header"
         fields:
-          - {
-              label: "Header Menu Items",
-              name: "menuItems",
+            - {
+              label: "Header Menu Items [NL]",
+              name: "menuItems_nl",
               widget: "list",
               fields:
                 [
-                  { label: "Label", name: "title", widget: "string" },
-                  { label: "Link URL", name: "route", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
+                { label: "Label", name: "title", widget: "string" },
+                { label: "Link URL", name: "route", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
+                ],
+            }
+            - {
+              label: "Dropdown Menu Items [NL]",
+              name: "menuDropdown_nl_AIRone",
+              widget: "list",
+              fields:
+                [
+                { label: "Label", name: "title", widget: "string" },
+                { label: "Link URL", name: "route", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
+                ],
+            }
+            - {
+              label: "Header Menu Items [EN]",
+              name: "menuItems_en",
+              widget: "list",
+              fields:
+                [
+                { label: "Label", name: "title", widget: "string" },
+                { label: "Link URL", name: "route", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
+                ],
+            }
+            - {
+              label: "Dropdown Menu Items [EN]",
+              name: "menuDropdown_en_AIRone",
+              widget: "list",
+              fields:
+                [
+                { label: "Label", name: "title", widget: "string" },
+                { label: "Link URL", name: "route", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
                 ],
             }
       - file: "content/components/footer.md"
