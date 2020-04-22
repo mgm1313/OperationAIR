@@ -3,14 +3,13 @@ slug: contact
 title: Contact Opnemen
 seo:
   browserTitle: Kom in contact!
-  description: >-
-    Heeft u een vraag voor ons team? Of bent u als ziekenhuis of bedrijf
-    geïnteresseerd om met ons samen te werken of uw expertise te delen? Neem dan
-    contact met ons op.
+  description: Heeft u een vraag voor ons team? Of bent u als ziekenhuis of
+    bedrijf geïnteresseerd om met ons samen te werken of uw expertise te delen?
+    Neem dan contact met ons op.
 ---
 # Contact opnemen
 
-Heeft u een vraag voor ons team? Of bent u als ziekenhuis of bedrijf geïnteresseerd om met ons samen te werken of uw expertise te delen? Wij willen u vragen om het onderstaande contactformulier in te vullen om uw expertise en/of suggestie(s) goed te kunnen koppelen aan de juiste personen binnen ons team.
+Heeft u een vraag voor ons team? Of bent u als ziekenhuis of bedrijf geïnteresseerd om met ons samen te werken of uw expertise te delen? Wij willen u vragen om het onderstaande contactformulier in te vullen om uw expertise en/of suggestie(s) goed te kunnen koppelen aan de juiste personen binnen ons team. Let op, momenteel zijn wij met name geïnteresseerd in internationale contacten.
 
 Algemene vragen aan het team kunt u stellen per e-mail via [info@operationair.org](mailto:info@operationair.org).
 
