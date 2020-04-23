@@ -63,14 +63,14 @@ function BlogsPage() {
         </div>
         <div className="sm:grid sm:grid-cols-2 sm:col-gap-4 sm:row-gap-6 md:col-gap-20 md:row-gap-8 lg:grid-cols-2">
 
-          {pageData.media.mediablock.sort((a,b) => {return new Date(a.date) - new Date(b.date);}).map((media, index) => {
+          {pageData.media.mediablock.sort((a,b) => {return new Date(b.date) - new Date(a.date);}).map((media, index) => {
             const logo = media.image;
             if (logo === null) return;
 
             let datetot = media.date.split("T")[0];
             let date = datetot;
             if(datetot.split("-").length === 3)
-              date = datetot.split("-")[2] + " " + monthNames[parseInt(datetot.split("-")[1])] + " " + datetot.split("-")[0];
+              date = datetot.split("-")[2] + " " + monthNames[(parseInt(datetot.split("-")[1]) - 1)] + " " + datetot.split("-")[0];
             return (
                 <a
                 key={index}

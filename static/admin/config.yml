@@ -273,6 +273,31 @@ collections:
               }
               ]
           }
+      - file: "content/static-pages/media/index.md"
+        label: "Media"
+        name: "Media"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+            label: "Media",
+            name: "media",
+            widget: "object",
+            fields:
+              [
+              {
+                label: "Mediablocks",
+                name: "mediablock",
+                widget: "list",
+                fields:
+                  [
+                  { label: Date, name: date, widget: datetime, dateFormat: "DD-MMMM-YYYY", timeFormat: "HH:mm"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Link to newspage", name: "url", widget: "string" },
+                  { name: image, label: Logo file, widget: image, allow_multiple: false },
+                  ],
+              }
+              ]
+          }
   - name: "staticPages_EN"
     label: "Static Pages [EN]"
     editor:
@@ -439,31 +464,6 @@ collections:
                   [
                   { label: "Title", name: "title", widget: "string" },
                   { label: "Link to partner", name: "url", widget: "string" },
-                  { name: image, label: Logo file, widget: image, allow_multiple: false },
-                  ],
-              }
-              ]
-          }
-      - file: "content/static-pages/media/index.md"
-        label: "Media"
-        name: "Media"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - {
-            label: "Media",
-            name: "media",
-            widget: "object",
-            fields:
-              [
-              {
-                label: "Mediablocks",
-                name: "mediablock",
-                widget: "list",
-                fields:
-                  [
-                  { label: Date, name: date, widget: datetime, dateFormat: "DD-MMMM-YYYY", timeFormat: "HH:mm"},
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Link to newspage", name: "url", widget: "string" },
                   { name: image, label: Logo file, widget: image, allow_multiple: false },
                   ],
               }
