@@ -36,6 +36,19 @@ function PartnersPage() {
                   extension
                 }
               }
+              logo_f {
+                title
+                url
+                image {
+                  childImageSharp {
+                    fluid(maxHeight: 96) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                  publicURL
+                  extension
+                }
+              }
               logo_t {
                 title
                 url
@@ -104,6 +117,7 @@ function PartnersPage() {
           <div className="">
             <div className="">
               <div className="">
+                OperationAir is made possible by
                 <div className="mt-8 grid grid-cols-3 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-3">
                   {pageData.partners.logo_s.map(partner => {
                     const logo = partner.image;
@@ -137,6 +151,41 @@ function PartnersPage() {
                   })}
                 </div>
                 <br/><br/>
+                Financial support
+                <div className="mt-8 grid grid-cols-3 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-3">
+                  {pageData.partners.logo_f.map(partner => {
+                    const logo = partner.image;
+                    if (logo === null) return;
+
+                    return (
+                        <a
+                            key={partner.title}
+                            href={partner.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="col-span-1 flex justify-center py-3 px-0 bg-gray-50"
+                        >
+                          {// https://github.com/gatsbyjs/gatsby/issues/10297#issuecomment-464834529
+                            logo.extension === "svg" && !logo.childImageSharp ? (
+                                <img
+                                    className="max-h-21"
+                                    src={logo.publicURL}
+                                    alt={partner.title}
+                                />
+                            ) : (
+                                <Img
+                                    className="max-h-21 w-full"
+                                    imgStyle={{ objectFit: "contain" }}
+                                    fluid={logo.childImageSharp.fluid}
+                                    alt={partner.title}
+                                />
+                            )}
+                        </a>
+                    );
+                  })}
+                </div>
+                <br/><br/>
+                Other partners
                 <div className="mt-8 grid grid-cols-4 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-4">
                   {pageData.partners.logo_t.map(partner => {
                     const logo = partner.image;
