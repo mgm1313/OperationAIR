@@ -4,6 +4,8 @@ menuItems_nl:
     route: /over
   - title: Het Team
     route: /team
+  - title: Media
+    route: /media
   - title: Ontwikkelingen
     route: /ontwikkelingen
   - title: AIRone
@@ -26,6 +28,8 @@ menuItems_en:
     route: /en/about
   - title: The Team
     route: /en/team
+  - title: Media
+    route: /en/media
   - title: Developments
     route: /en/developments
   - title: AIRone
