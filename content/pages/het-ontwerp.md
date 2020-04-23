@@ -3,10 +3,9 @@ slug: hetontwerp
 title: Het Ontwerp
 seo:
   browserTitle: Het Ontwerp
-  description: >-
-    Het apparaat wat wij ontwikkelen, de AIRone, is een beademingsapparaat dat
-    kan worden ingesteld op een manier zoals de IC’s in Nederland dat gewend
-    zijn.
+  description: Het apparaat wat wij ontwikkelen, de AIRone, is een
+    beademingsapparaat dat kan worden ingesteld op een manier zoals de IC’s in
+    Nederland dat gewend zijn.
 ---
 <!--StartFragment-->
 
@@ -34,6 +33,6 @@ De AIRone is specifiek ontworpen als noodoplossing voor het beademen van een cor
 
 ## Open source beschikbaarheid
 
-Nadat de AIRone (klinisch) is goedgekeurd door de Nederlandse overheid, zal op deze pagina verwezen worden naar het ontwerp en de benodigde documentatie.
+Het design en alle documentatie rondom de AIRone is open source beschikbaar via deze [website](https://osf.io/mn7xq/).
 
 <!--EndFragment-->
