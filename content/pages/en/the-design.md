@@ -3,8 +3,8 @@ slug: en/thedesign
 title: The Design
 seo:
   browserTitle: The Design
-  description: >-
-    Our ventilator, the AIRone, is a ventilator that can be used the same way as is accustomed on the Intensive Care in the Netherlands.
+  description: Our ventilator, the AIRone, is a ventilator that can be used the
+    same way as is accustomed on the Intensive Care in the Netherlands.
 ---
 <!--StartFragment-->
 
@@ -24,7 +24,6 @@ With our system the settings can be altered to the clinical condition of the pat
 * Post end-expiratory pressure (PEEP)
 * Fraction of inspired oxygen (FiO2)
 
-
 The screen will visualize the volume, pressure and flow curves. These are required for assessment of the clinical condition of the patient.
 
 ## Intended use
@@ -33,6 +32,6 @@ The AIRone is designed as an emergency solution for artificial respiration of pa
 
 ## Open-source availability
 
-At the moment the AIRone is to be approved by Dutch health authorities. If we receive approval, we will publicly share our design and required documents on this webpage.
+The design and documentation of the AIRone is available on this [website](https://osf.io/mn7xq/).
 
 <!--EndFragment-->
