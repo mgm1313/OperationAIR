@@ -65,6 +65,10 @@ media:
       url: "https://www.zorgvisie.nl/delftse-studenten-bouwen-beademingsapparatuur-wi\
         j-denken-out-of-the-box/ "
       image: /assets/zorgvisie,30-maart.jpg
+    - date: 2020-03-28T16:03:50.029Z
+      title: Nederlandse Vereniging voor Technische Geneeskunde
+      url: https://www.nvvtg.nl/technische-geneeskunde-studenten-uit-delft-ontwikkelen-simpel-beademingsapparaat-voor-corona-patienten/
+      image: /assets/nvvtg-28-maart.jpg
     - date: 2020-03-20T00:00:00.000Z
       title: Nieuwsuur
       url: https://nos.nl/nieuwsuur/artikel/2327731-de-uitzending-van-20-maart-risico-s-voor-zorgpersoneel-meer-beademingsapparatuur-corona-aanpak-taiwan.html
