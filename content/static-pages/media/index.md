@@ -61,8 +61,12 @@ media:
       url: "https://www.zorgvisie.nl/delftse-studenten-bouwen-beademingsapparatuur-wi\
         j-denken-out-of-the-box/ "
       image: /assets/zorgvisie,30-maart.jpg
-    - date: 2020-03-19T00:00:00.000Z
+    - date: 2020-03-20T00:00:00.000Z
       title: Nieuwsuur
       url: https://nos.nl/nieuwsuur/artikel/2327731-de-uitzending-van-20-maart-risico-s-voor-zorgpersoneel-meer-beademingsapparatuur-corona-aanpak-taiwan.html
       image: /assets/nieuwsuur-20-maart.jpg
+    - date: 2020-03-19T15:52:10.951Z
+      url: https://www.tudelft.nl/2020/tu-delft/masterstudenten-tu-delft-starten-initiatief-om-beademingsapparatuur-te-ontwikkelen/
+      title: TU Delft
+      image: /assets/1.-tu-19-maart.jpg
 ---
