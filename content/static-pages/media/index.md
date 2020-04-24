@@ -2,6 +2,10 @@
 title: Media
 media:
   mediablock:
+    - date: 2020-04-23T14:57:07.952Z
+      title: Technisch Weekblad
+      url: https://www.technischweekblad.nl/nieuws/de-garantie-stopt-niet-bij-de-deur
+      image: /assets/tw-23-april.jpg
     - date: 2020-04-21T00:00:00.000Z
       title: De Corona Keukencast
       url: https://www.youtube.com/watch?v=urCgOitSu_s
