@@ -77,4 +77,9 @@ media:
       url: https://www.tudelft.nl/2020/tu-delft/masterstudenten-tu-delft-starten-initiatief-om-beademingsapparatuur-te-ontwikkelen/
       title: TU Delft
       image: /assets/1.-tu-19-maart.jpg
+    - date: 2020-04-05T15:06:46.598Z
+      title: Delft op Zondag
+      url: "https://www.delftopzondag.nl/nieuws/algemeen/92148/delftse-studenten-ontw\
+        ikkelen-beademingsapparatuur- "
+      image: /assets/delftopzondag-5-april.jpg
 ---
