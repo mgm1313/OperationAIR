@@ -26,6 +26,10 @@ media:
       title: OmroepWest
       url: www.omroepwest.nl/nieuws/4030110/Studenten-TU-Delft-ontwikkelen-simpel-beademingsapparaat
       image: /assets/omroepwest,13-april.jpg
+    - date: 2020-04-10T14:50:26.253Z
+      title: Radio 2
+      url: https://www.nporadio2.nl/gemist/video/13096/hubald-ontwerpt-met-medestudenten-beademingsapparaat-voor-coronapatienten
+      image: /assets/radio2-10-april.jpg
     - date: 2020-04-07T00:00:00.000Z
       title: Ministerie van EZK
       url: https://twitter.com/MinisterieEZK/status/1247438015959531524?s=20
