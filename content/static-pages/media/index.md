@@ -14,6 +14,10 @@ media:
       title: Op1
       url: https://www.npostart.nl/tu-delft-studenten-maakten-in-drie-weken-beademingsapparaat-voor-intensive-care/17-04-2020/POMS_BV_16087788
       image: /assets/op1,18-april.jpg
+    - date: 2020-04-18T15:07:18.311Z
+      title: Delft op Zondag
+      url: https://www.delftopzondag.nl/nieuws/algemeen/92217/premier-rutte-brengt-bezoek-aan-operationair-
+      image: /assets/delftopzondag-18-april.jpg
     - date: 2020-04-15T14:47:17.400Z
       title: RTL Nieuws
       url: https://www.rtlnieuws.nl/nieuws/nederland/video/5091681/premier-mark-rutte-neemt-kijkje-bij-nieuw-beademingsapparaat-van-tu
@@ -47,6 +51,11 @@ media:
       url: "https://nos.nl/video/2329639-beademingsapparaat-tu-delft-is-bijna-klaar.h\
         tml "
       image: /assets/NOS,6-april.jpg
+    - date: 2020-04-05T15:06:46.598Z
+      title: Delft op Zondag
+      url: "https://www.delftopzondag.nl/nieuws/algemeen/92148/delftse-studenten-ontw\
+        ikkelen-beademingsapparatuur- "
+      image: /assets/delftopzondag-5-april.jpg
     - date: 2020-04-03T00:00:00.000Z
       title: NRC Handelsblad Wetenschap
       url: "https://www.nrc.nl/nieuws/2020/04/03/snel-ideeen-voor-verse-lucht-op-de-i\
@@ -77,9 +86,4 @@ media:
       url: https://www.tudelft.nl/2020/tu-delft/masterstudenten-tu-delft-starten-initiatief-om-beademingsapparatuur-te-ontwikkelen/
       title: TU Delft
       image: /assets/1.-tu-19-maart.jpg
-    - date: 2020-04-05T15:06:46.598Z
-      title: Delft op Zondag
-      url: "https://www.delftopzondag.nl/nieuws/algemeen/92148/delftse-studenten-ontw\
-        ikkelen-beademingsapparatuur- "
-      image: /assets/delftopzondag-5-april.jpg
 ---
