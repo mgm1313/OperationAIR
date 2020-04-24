@@ -14,6 +14,10 @@ media:
       title: RTL Nieuws
       url: https://www.rtlnieuws.nl/nieuws/nederland/video/5091681/premier-mark-rutte-neemt-kijkje-bij-nieuw-beademingsapparaat-van-tu
       image: /assets/rtl-nieuws-15-april.jpg
+    - date: 2020-04-14T14:48:27.207Z
+      title: Radio 10
+      url: https://omny.fm/shows/radio-10-gemist/studenten-van-jaap-maken-in-3-weken-beademingsappa
+      image: /assets/_dsc5201.jpg
     - date: 2020-04-13T00:00:00.000Z
       title: Nieuwsuur
       url: https://nos.nl/nieuwsuur/artikel/2330365-de-uitzending-van-13-april-hoe-kunnen-scholen-weer-open-beademingsapparaat-van-eigen-bodem-voorbereiden-op-economie-op-1-5-meter.html
