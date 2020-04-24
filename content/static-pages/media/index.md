@@ -10,6 +10,10 @@ media:
       title: Op1
       url: https://www.npostart.nl/tu-delft-studenten-maakten-in-drie-weken-beademingsapparaat-voor-intensive-care/17-04-2020/POMS_BV_16087788
       image: /assets/op1,18-april.jpg
+    - date: 2020-04-15T14:47:17.400Z
+      title: RTL Nieuws
+      url: https://www.rtlnieuws.nl/nieuws/nederland/video/5091681/premier-mark-rutte-neemt-kijkje-bij-nieuw-beademingsapparaat-van-tu
+      image: /assets/rtl-nieuws-15-april.jpg
     - date: 2020-04-13T00:00:00.000Z
       title: Nieuwsuur
       url: https://nos.nl/nieuwsuur/artikel/2330365-de-uitzending-van-13-april-hoe-kunnen-scholen-weer-open-beademingsapparaat-van-eigen-bodem-voorbereiden-op-economie-op-1-5-meter.html
