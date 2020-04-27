@@ -17,7 +17,7 @@ Het apparaat wat wij ontwikkelen, de AIRone, is een beademingsapparaat dat kan w
 
 ## Instellingen
 
-Met ons systeem kan gestuurd worden op de klinische conditie van de patiënt. Via een touchscreen (degraphic user interface) kunnen artsen en verpleegkundigen het volgende instellen:
+Met ons systeem kan gestuurd worden op de klinische conditie van de patiënt. Via een touchscreen (graphic user interface) kunnen artsen en verpleegkundigen het volgende instellen:
 
 * Ademfrequentie (RR)
 * Inspiratie/expiratie ratio (I/E ratio)
