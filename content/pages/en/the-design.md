@@ -21,10 +21,10 @@ With our system the settings can be altered to the clinical condition of the pat
 * Respiratory rate (RR)
 * Inspiration/expiration ratio (I/E ratio)
 * Inspiratory pressure (Pinsp)
-* Post end-expiratory pressure (PEEP)
+* Positive end-expiratory pressure (PEEP)
 * Fraction of inspired oxygen (FiO2)
 
-The screen will visualize the volume, pressure and flow curves. These are required for assessment of the clinical condition of the patient.
+The screen will visualize the pressure and flow curves. These are required for assessment of the clinical condition of the patient.
 
 ## Intended use
 
