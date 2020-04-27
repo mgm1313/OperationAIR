@@ -22,10 +22,10 @@ Met ons systeem kan gestuurd worden op de klinische conditie van de patiënt. Vi
 * Ademfrequentie (RR)
 * Inspiratie/expiratie ratio (I/E ratio)
 * Beademingsdruk (Pinsp)
-* Post end-expiratory pressure (PEEP)
+* Positieve eind-expiratoire druk (PEEP)
 * Zuurstofconcentratie (FiO2)
 
-Intussen laat het scherm de volume-, druk- en flow-curves zien, die noodzakelijk zijn voor het beoordelen van de klinische conditie van de patiënt.
+Intussen laat het scherm de druk- en flow-curves zien, die noodzakelijk zijn voor het beoordelen van de klinische conditie van de patiënt.
 
 ## Beoogd gebruik
 
