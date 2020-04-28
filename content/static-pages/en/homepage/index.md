@@ -12,7 +12,7 @@ introduction:
     link: /en/about
   button2:
     title: Open source documentation
-    link: https://osf.io/mn7xq/
+    link: /en/thedesign
   video:
     youtubeID: "407922568"
     subtitle: "Source: Nieuwsuur (Monday April 13th 2020)"
