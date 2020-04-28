@@ -11,8 +11,8 @@ introduction:
     title: Our approach
     link: /en/about
   button2:
-    title: Read the FAQ
-    link: /en/faq
+    title: Open source documentation
+    link: https://osf.io/mn7xq/
   video:
     youtubeID: "407922568"
     subtitle: "Source: Nieuwsuur (Monday April 13th 2020)"
