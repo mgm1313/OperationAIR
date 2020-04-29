@@ -13,7 +13,7 @@ introduction:
     link: /over
   button2:
     title: Open source documentatie
-    link: 'https://osf.io/mn7xq/'
+    link: 'https://www.osf.io/mn7xq/'
   video:
     youtubeID: '407922568'
     subtitle: 'Bron: Nieuwsuur (maandag 13 april 2020)'
