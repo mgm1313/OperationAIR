@@ -13,7 +13,8 @@ partners:
       image: /assets/erasmus.png
   logo_f:
     - title: TU Response Fund
-      url: 'https://www.tudelft.nl/universiteitsfonds/tu-delft-covid-19-response-fund/'
+      url: >-
+        https://www.tudelft.nl/universiteitsfonds/tu-delft-covid-19-response-fund/
       image: /assets/TU_Response_Fund.png
   logo_t:
     - title: Applied Biosignals
@@ -52,6 +53,9 @@ partners:
     - title: MTB 3D
       url: 'https://www.mtb3d.com/'
       image: /assets/MTB3D.png
+    - title: NautaDutilh
+      url: 'https://www.nautadutilh.com/nl'
+      image: /assets/nautadutilh.png
     - title: NiVoGe Groep
       url: 'https://www.nivoge-groep.nl/'
       image: /assets/Nivoge.png
