@@ -53,6 +53,9 @@ partners:
     - title: MTB 3D
       url: 'https://www.mtb3d.com/'
       image: /assets/MTB3D.png
+    - title: NautaDutilh
+      url: 'https://www.nautadutilh.com/nl'
+      image: /assets/nautadutilh.png
     - title: NiVoGe Groep
       url: 'https://www.nivoge-groep.nl/'
       image: /assets/Nivoge.png
@@ -80,8 +83,5 @@ partners:
     - title: VP Instruments
       url: www.vpinstruments.com
       image: /assets/VP_Instruments.png
-    - title: NautaDutilh
-      url: 'https://www.nautadutilh.com/nl'
-      image: /assets/nautadutilh.png
 ---
 OperationAIR works closely with
