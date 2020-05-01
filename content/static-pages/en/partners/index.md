@@ -13,7 +13,8 @@ partners:
       image: /assets/erasmus.png
   logo_f:
     - title: TU Response Fund
-      url: 'https://www.tudelft.nl/universiteitsfonds/tu-delft-covid-19-response-fund/'
+      url: >-
+        https://www.tudelft.nl/universiteitsfonds/tu-delft-covid-19-response-fund/
       image: /assets/TU_Response_Fund.png
   logo_t:
     - title: Applied Biosignals
@@ -79,5 +80,8 @@ partners:
     - title: VP Instruments
       url: www.vpinstruments.com
       image: /assets/VP_Instruments.png
+    - title: NautaDutilh
+      url: 'https://www.nautadutilh.com/nl'
+      image: /assets/nautadutilh.png
 ---
 OperationAIR works closely with
