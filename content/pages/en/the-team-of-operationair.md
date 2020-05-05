@@ -3,10 +3,10 @@ slug: en/team
 title: The team of OperationAIR
 seo:
   browserTitle: Team of OperationAIR
-  description: >-
-    OperationAIR is een non-profit studententeam bestaande uit 50 studenten. Het
-    team is opgezet door prof. dr. ir. Jaap Harlaar, opleidingsdirecteur van
-    Technical Medicine, samen met studenten Technical Medicine.
+  description: OperationAIR is een non-profit studententeam bestaande uit 50
+    studenten. Het team is opgezet door prof. dr. ir. Jaap Harlaar,
+    opleidingsdirecteur van Technical Medicine, samen met studenten Technical
+    Medicine.
 ---
 # The team
 
@@ -19,9 +19,14 @@ OperationAIR is a non-profit student team, consisting of 50 studentens from Delf
 
 The team consists of three departments:
 
-* **Management & Communication (M&C)**\
-  Internal and external communication is facilitated by M&C. Also financial, legal and regulatory aspects of design and production of our ventilator are managed from this department.
-* **Design**\
-  Team Design focuses in the requirements, design, prototyping and development of our intended ventilator.
-* **Scenario & Realization**\
-  To predict the possible demand in out mechanical ventilators, we made prediction models on the national contamination curve based on RIVM data. Team Scenario & Realization also analysed the occupation of the intensive care capacity in the Netherlands. The team is also responsible for the implementation strategy to introduce our ventilator as soon as possible in times of crisis
+**Management & Communication (M&C)**\
+Internal and external communication is facilitated by M&C. Also financial, legal and regulatory aspects of design and production of our ventilator are managed from this department.
+
+**Design**\
+Team Design focuses in the requirements, design, prototyping and development of our intended ventilator.
+
+**Realisation**\
+This team works on the production of the AIRone. They set up a supply chain and keep contact with our suppliers and the assembly company. 
+
+**Internationalisering**\
+Team International enables the spread of our knowledge to other countries. The team members worked on finishing the documentation in order to share our design and documentation open source. In addition, they have contact with other initiatieves worldwide and answer questions about the development, production and implementation of emergency ventilators. Also, they offer active support to other initiatives.
