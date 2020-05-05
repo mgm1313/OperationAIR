@@ -17,7 +17,7 @@ OperationAIR is a non-profit student team, consisting of 50 studentens from Delf
 
 ## Subteams
 
-The team consists of three departments:
+The team consists of four departments:
 
 **Management & Communication (M&C)**\
 Internal and external communication is facilitated by M&C. Also financial, legal and regulatory aspects of design and production of our ventilator are managed from this department.
