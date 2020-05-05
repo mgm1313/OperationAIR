@@ -33,6 +33,6 @@ Intussen laat het scherm de druk- en flow-curves zien, die noodzakelijk zijn voo
 
 ## Beoogd gebruik
 
-De AIRone is specifiek ontworpen als noodoplossing voor het beademen van een coronapatiënt en mag alleen worden gebruikt als er geen reguliere beademingsapparatuur beschikbaar is. De AIRone is bedoeld voor gebruik bij coronapatienten die op de Intensive Care liggen.
+De AIRone levert positieve druk beademing (positive-pressure ventilation, (PPV)) voor automatische noodbeademing met instelbare positive end-expiratory pressure (PEEP), I:E-ratio, piekdruk, zuurstofconcentratie en ademfrequentie. De AIRone is bedoeld voor gebruik bij volwassen (met verdenking op) COVID-19-patiënten met respiratoire insufficiëntie waarbij non-weaned respiratoire ondersteuning noodzakelijk is om een langere periode te overbruggen tot conventionele beademingsapparatuur weer beschikbaar komt.
 
 <!--EndFragment-->
