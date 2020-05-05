@@ -35,8 +35,9 @@ questions:
   - question: Produceert OperationAIR ook apparaten voor het buitenland?
     answer: Nee, op dit moment produceren wij geen noodbeademingsapparaten voor
       andere landen. Wel hebben wij ons ontwerp en documentatie open source
-      beschikbaar gesteld zodat andere landen hier gebruik van kunnen maken en
-      bieden wij ook actieve support aan buitenlandse initiatieven.
+      beschikbaar gesteld via dit [platform ](https://osf.io/mn7xq/)zodat andere
+      landen hier gebruik van kunnen maken en bieden wij ook actieve support aan
+      buitenlandse initiatieven.
   - question: Ik wil helpen, wat kan ik doen?
     answer: Heel fijn dat u zich wilt inzetten! Graag vragen wij u het
       contactformulier in te vullen onder contact.
