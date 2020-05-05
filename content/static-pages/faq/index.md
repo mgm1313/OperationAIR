@@ -30,7 +30,9 @@ questions:
       verschillende specialisten van het Leids Universitair Medisch Centrum en
       het Erasmus Medisch Centrum. De AIRone is uitgebreid getest op
       functionaliteit, elektrische en mechanische veiligheid en
-      gebruiksvriendelijkheid.
+      gebruiksvriendelijkheid. Het test rapport is beschikbaar via deze [website
+      ](https://osf.io/mn7xq/)samen met ons ontwerp en andere bijbehorende
+      documentatie.
 
 
       Wij produceren 80 apparaten voor Nederland. Daarnaast hebben wij ons ontwerp en bijbehorende documentatie open source gedeeld zodat andere landen hier gebruik van kunnen maken. Wij bieden actieve support aan buitenlandse initiatieven die hierom vragen. Door ons ontwerp te delen, klaar te staan voor vragen over de ontwikkeling, productie of implementatie en hulp aan te bieden, hopen wij andere landen te kunnen helpen bij het opvangen van een tekort aan beademingsapparatuur.
