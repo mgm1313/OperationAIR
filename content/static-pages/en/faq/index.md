@@ -24,8 +24,10 @@ questions:
       be used when a shortage of regular ventilators occurs. The design
       requirements are developed together with ventilation specialists from the
       Leiden University Medical Center and Erasmus Medical Center in the
-      Netherlands. The AIRone has been tested on functionality, electrical and
-      mechanical safety and usability.  
+      Netherlands. The AIRone has been extensively tested on functionality,
+      electrical and mechanical safety and usability.  The design verification
+      report is available on this [website](https://osf.io/mn7xq/) together with
+      our design and other documents.
 
 
       We are producing 80 devices for the Netherlands. In addition, we have shared our design and documentation open source enabling other countries to make use of our knowledge. We offer active support to foreign countries and initiatives. By sharing our design, answering questions about the development, production or implementation and offering support, we hope to help other countries to tackle the shortage of ventilators for covid-19 patients.
