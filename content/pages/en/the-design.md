@@ -32,6 +32,6 @@ The screen will visualize the pressure and flow curves. These are required for a
 
 ## Intended use
 
-The AIRone is designed as an emergency solution for artificial respiration of patients affected by COVID-19. It is only to be used when there is a shortage of regular ventilators. If this situation occurs, the AIRone is intended to be used for sedated patients who require intensive care due to COVID-19.
+The AIRone provides positive-pressure ventilation (PPV) for emergency automatic ventilation with adjustable PEEP, I:E ratio, peak pressure, oxygen concentration and breathing frequency, created for the use on adult (suspected) COVID-19 patients who need non-weaned respiratory support to bridge a longer period of time until conventional ventilation becomes available.
 
 <!--EndFragment-->
