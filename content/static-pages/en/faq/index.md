@@ -19,14 +19,16 @@ questions:
 
       The team also wants to help other countries to tackle the shortage of ventilators. Therefore, we have shared our design and documentation open source to enable other countries to make use of our knowledge. In addition, we offer support to other initiatives worldwide.
   - question: What does OperationAIR do?
-    answer: We have developed an emergency ventilator for covid-19 patients that can
-      be used when a shortage of regular ventilators occurs. We are producing 80
-      devices for the Netherlands. In addition, we have shared our design and
-      documentation open source enabling other countries to make use of our
-      knowledge. We offer active support to foreign countries and initiatives.
-      By sharing our design, answering questions about the development,
-      production or implementation and offering support, we hope to help other
-      countries to tackle the shortage of ventilators for covid-19 patients.
+    answer: >-
+      We have developed an emergency ventilator for covid-19 patients that can
+      be used when a shortage of regular ventilators occurs. The design
+      requirements are developed together with ventilation specialists from the
+      Leiden University Medical Center and Erasmus Medical Center in the
+      Netherlands. The AIRone has been tested on functionality, electrical and
+      mechanical safety and usability.  
+
+
+      We are producing 80 devices for the Netherlands. In addition, we have shared our design and documentation open source enabling other countries to make use of our knowledge. We offer active support to foreign countries and initiatives. By sharing our design, answering questions about the development, production or implementation and offering support, we hope to help other countries to tackle the shortage of ventilators for covid-19 patients.
   - question: Does OperationAIR also manufactures ventilators for foreign countries?
     answer: No, we don't manufacture our ventilator for foreign countries. However,
       our design and documentation is open source available for use in other
