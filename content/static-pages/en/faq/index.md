@@ -22,7 +22,7 @@ questions:
     answer: >-
       We have developed an emergency ventilator for covid-19 patients that can
       be used when a shortage of regular ventilators occurs. The design
-      requirements are developed together with ventilation specialists from the
+      requirements are set up together with ventilation specialists from the
       Leiden University Medical Center and Erasmus Medical Center in the
       Netherlands. The AIRone has been extensively tested on functionality,
       electrical and mechanical safety and usability.  The design verification
