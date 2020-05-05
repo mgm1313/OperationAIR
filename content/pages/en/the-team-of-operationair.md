@@ -28,5 +28,5 @@ Team Design focuses in the requirements, design, prototyping and development of 
 **Realisation**\
 This team works on the production of the AIRone. They set up a supply chain and keep contact with our suppliers and the assembly company. 
 
-**Internationalisering**\
+**International**\
 Team International enables the spread of our knowledge to other countries. The team members worked on finishing the documentation in order to share our design and documentation open source. In addition, they have contact with other initiatieves worldwide and answer questions about the development, production and implementation of emergency ventilators. Also, they offer active support to other initiatives.
