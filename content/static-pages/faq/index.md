@@ -23,15 +23,17 @@ questions:
 
       Behalve Nederland wil het team van OperationAIR ook andere landen helpen om tekorten aan beademingsapparatuur op te vangen. Daarom is het ontwerp van de AIRone en de bijbehorende documentatie open source beschikbaar gesteld en biedt het team support aan andere initiatieven.
   - question: Wat doet OperationAIR?
-    answer: Wij hebben een noodbeademingsapparaat ontwikkeld voor coronapatienten
-      dat ingezet kan worden als er een tekort ontstaat aan reguliere
-      beademingsapparatuur. Wij produceren 80 apparaten voor Nederland.
-      Daarnaast hebben wij ons ontwerp en bijbehorende documentatie open source
-      gedeeld zodat andere landen hier gebruik van kunnen maken. Wij bieden
-      actieve support aan buitenlandse initiatieven die hierom vragen. Door ons
-      ontwerp te delen, klaar te staan voor vragen over de ontwikkeling,
-      productie of implementatie en hulp aan te bieden, hopen wij andere landen
-      te kunnen helpen bij het opvangen van een tekort aan beademingsapparatuur.
+    answer: >-
+      Wij hebben een noodbeademingsapparaat ontwikkeld voor coronapatienten dat
+      ingezet kan worden als er een tekort ontstaat aan reguliere
+      beademingsapparatuur. De ontwerpeisen zijn opgesteld samen met
+      verschillende specialisten van het Leids Universitair Medisch Centrum en
+      het Erasmus Medisch Centrum. De AIRone is uitgebreid getest op
+      functionaliteit, elektrische en mechanische veiligheid en
+      gebruiksvriendelijkheid.
+
+
+      Wij produceren 80 apparaten voor Nederland. Daarnaast hebben wij ons ontwerp en bijbehorende documentatie open source gedeeld zodat andere landen hier gebruik van kunnen maken. Wij bieden actieve support aan buitenlandse initiatieven die hierom vragen. Door ons ontwerp te delen, klaar te staan voor vragen over de ontwikkeling, productie of implementatie en hulp aan te bieden, hopen wij andere landen te kunnen helpen bij het opvangen van een tekort aan beademingsapparatuur.
   - question: Produceert OperationAIR ook apparaten voor het buitenland?
     answer: Nee, op dit moment produceren wij geen noodbeademingsapparaten voor
       andere landen. Wel hebben wij ons ontwerp en documentatie open source
