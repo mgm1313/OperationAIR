@@ -15,19 +15,18 @@ questions:
       receive intensive care. By developing this ventilator we hope to be able
       to provide intensive care for those affected by the shortage.
   - question: What does OperationAIR do?
-    answer: We investigate all different scenarios regarding demand for ventilators
-      in the Netherlands. The aim is to develop a ventilator that can be used in
-      emergencies caused by a shortage.
-  - question: How long will it take before the ventilators can be implemented?
-    answer: We are currently busy with building the first prototype and hope to be
-      testing it soon. As we are dependant of several external factors, the
-      moment of implementation is still unsure.
-  - question: For whom are the ventilators produced and is it available for everyone?
-    answer: The ventilators are developed for in-hospital use on locations with a
-      shortage of regular mechanical ventilators. We are regularly in contact
-      with intensive care doctors of Leiden University Medical Center and the
-      national network for acute medicine (LNAZ). Only when our prototype passes
-      the necessary tests, we will openly share the design on our website.
+    answer: We have developed an emergency ventilator for covid-19 patients that can
+      be used when a shortage of regular ventilators occurs. We are producing 80
+      devices for the Netherlands. In addition, we have shared our design and
+      documentation open source enabling other countries to make use of our
+      knowledge. We offer active support to foreign countries and initiatives.
+      By sharing our design, answering questions about the development,
+      production or implementation and offering support, we hope to help other
+      countries to tackle the shortage of ventilators for covid-19 patients.
+  - question: Does OperationAIR also manufactures ventilators for foreign countries?
+    answer: No, we don't manufacture our ventilator for foreign countries. However,
+      our design and documentation is open source available for use in other
+      countries. In addition, we offer support to other initiatives worldwide.
   - question: I want to help, how can I contribute?
     answer: We are flattered by the amount of support offers. To maintain an
       overview of the offered help and suggestions, we would like to ask you to
@@ -47,10 +46,4 @@ questions:
       cleaned using alcohol wipes. The same is true for washing hands for at
       least 20 seconds with soap. Furthermore, team members keep each other up
       to date via online meetings on platforms as Skype and Zoom
-  - question: Is OperationAIR also working on production and implementation in other
-      countries?
-    answer: "When a clinically approved design is realized, for now, the aim is to
-      produce and implement the ventilator in the Netherlands only. The design
-      and all additional information will be made public, so other countries can
-      use the design for production as well. "
 ---
