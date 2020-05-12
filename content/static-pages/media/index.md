@@ -2,6 +2,10 @@
 title: Media
 media:
   mediablock:
+    - date: 2020-05-07T08:34:44.344Z
+      title: Convergence Health & Technology
+      url: https://convergence.healthandtechnology.nl/magazine/article/4/Dit%20beademingsapparaat%20is%20gemaakt%20in%2017%20dagen
+      image: /assets/convergence-7-mei.jpg
     - date: 2020-05-06T08:31:51.059Z
       url: https://www.tudelft.nl/2020/tu-delft/studenten-tu-delft-maken-ontwerp-beademingsapparaat-online-beschikbaar-voor-internationaal-gebruik/
       title: TU Delft
