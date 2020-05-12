@@ -2,6 +2,10 @@
 title: Media
 media:
   mediablock:
+    - date: 2020-05-06T08:31:51.059Z
+      url: https://www.tudelft.nl/2020/tu-delft/studenten-tu-delft-maken-ontwerp-beademingsapparaat-online-beschikbaar-voor-internationaal-gebruik/
+      title: TU Delft
+      image: /assets/tu-delft-6-mei.jpg
     - date: 2020-04-23T14:57:07.952Z
       title: Technisch Weekblad
       url: https://www.technischweekblad.nl/nieuws/de-garantie-stopt-niet-bij-de-deur
