@@ -1,20 +1,20 @@
 ---
-slug: bijdragen
-title: Bijdragen?
+slug: Air for All
+title: Air for All
 seo:
-  browserTitle: Bijdragen?
-  description: Bijdrage leveren
+  browserTitle: Air for All
+  description: Air for All
 ---
-# Bijdragen?
+# Air for All
 
-Heel fijn dat u een bijdrage wilt leveren aan OperationAIR!
+OperationAIR is onderdeel van 'Air for All', een overkoepelend initiatief van de TU Delft dat bestaat uit drie projecten die elk een ander soort beademingsapparaat ontwikkelen. Deze groep bestaat uit: 
 
-Hieronder vindt u specifieke producten en/of diensten waar wij momenteel naar op zoek zijn. Bent u of kent u iemand die ons hiermee zou kunnen helpen? Neem dan contact met ons op via: [info@operationair.org](mailto:info@operationair.org). Zet hierbij het relevante onderdeel in de onderwerpsregel, zodat wij zo snel mogelijk bij u terug kunnen komen.
+1. **OperationAIR** - ontwikkelt een noodbeademingsapparaat dat zo goed mogelijk voldoet aan de Europese veiligheidseisen en dat qua gebruiksvriendelijkheid en instellingen lijkt op de reguliere beademingsapparatuur die in de Nederlandse ziekenhuizen wordt gebruikt. Het apparaat is compatibel met de infrastructuur in Nederlandse ziekenhuizen.
 
-**Doneren?** Wilt u ons onderzoek of ander COVID-19 gerelateerd onderzoek aan de TU Delft steunen? Dit kan via het TU Delft COVID-19 Response Fund, meer informatie kunt u [hier](https://www.tudelft.nl/universiteitsfonds/tu-delft-covid-19-response-fund/) vinden.
+2. **BTB-Breathe** - ontwikkelt een beademingsapparaat dat bestaat uit standaardonderdelen die overal ter wereld lokaal beschikbaar zijn. Het apparaat is compatibel met de infrastructuur in Nederlandse ziekenhuizen, maar ook met de infrastructuur in buitenlandse ziekenhuizen.
 
-Voor overige bijdragen en expertise verwijzen we u graag verder naar onze [contactpagina](/contact). <br/><br/><hr/><br/>
+3. **Project Inspiration** - ontwikkelt een mechanisch beademingsapparaat, geïnspireerd op het een beademingsapparaat uit de jaren '60 van Rijksmuseum Boerhaave. Er is geen elektronica nodig voor dit apparaat. Dit apparaat is door iedereen eenvoudig te bouwen en te repareren, ook in minder ontwikkelde landen. Het apparaat kan worden gebruikt buiten een ziekenhuis setting.
 
-
+Met een breder portfolio werken de projecten samen aan het globale tekort aan beademingsapparatuur. Meer informatie over de projecten is te vinden op deze [website](https://tudelft-bmech-coronavirus.nl/).
 
 ![]()
