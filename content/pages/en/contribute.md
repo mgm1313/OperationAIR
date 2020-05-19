@@ -1,20 +1,18 @@
 ---
-slug: en/contribute
-title: Contribute?
+slug: en/airforall
+title: Air for All
 seo:
-  browserTitle: Contribute?
-  description: Bijdrage leveren
+  browserTitle: Air for All
+  description: Air for All
 ---
-# Contribute?
+# Air for All
 
-We are glad that you want to contribute to OperationAIR!
+OperationAIR is part of 'Air for All', an umbrella initiative of TU Delft that consists of three projects, each devoted to developing a different type of ventilator. This group consists of: 
 
-Below you will find specific products and / or services that we are currently looking for. Are you or do you know someone who could help us with this? Please contact us at: [info@operationair.nl](<mailto: info@operationair.org>)
+1. **OperationAIR** - dedicated breathing system that as close as reasonably possible complies with safety regulations and will be usable within the Dutch hospital infrastructure.
+2. **BTB-Breathe** - a dedicated breathing system designed with the absolute minimum of parts, usable within and outside the Dutch hospital infrastructure.
+3. **Project Inspiration** - a dedicated breathing system with a mechanical – analogic basis, suitable for use outside the hospital setting (i.e. in emergency overflow facilities), or in low income countries.
 
-**Financial support:** Would you like to support our research or other COVID-19 related research at TU Delft? Donations are welcome to the TU Delft COVID-19 Response Fund, more information can be found on their [website](https://www.tudelft.nl/universiteitsfonds/tu-delft-covid-19-response-fund/).
-
-For other contributions and expertise, we would like to refer you to our [contactpage](/en/contact). <br/><br/><hr/><br/>
-
-
+Our broader portfolio enables us to work together to address the global shortage of ventilators. More information can be found at this [website](https://tudelft-bmech-coronavirus.nl/).
 
 ![]()
