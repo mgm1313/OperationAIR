@@ -1,5 +1,5 @@
 ---
-slug: Air for All
+slug: airforall
 title: Air for All
 seo:
   browserTitle: Air for All
