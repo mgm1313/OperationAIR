@@ -34,8 +34,8 @@ menuItems_en:
     route: /en/design_requirements
   - title: Partners
     route: /en/partners
-  - title: Contribute?
-    route: /en/contribute
+  - title: Air for All
+    route: /en/airforall
   - title: FAQ
     route: /en/faq
 menuDropdown_en_AIRone:
