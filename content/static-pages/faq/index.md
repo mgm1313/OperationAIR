@@ -42,9 +42,6 @@ questions:
       beschikbaar gesteld via dit [platform ](https://osf.io/mn7xq/)zodat andere
       landen hier gebruik van kunnen maken en bieden wij ook actieve support aan
       buitenlandse initiatieven.
-  - question: Ik wil helpen, wat kan ik doen?
-    answer: Heel fijn dat u zich wilt inzetten! Graag vragen wij u het
-      contactformulier in te vullen onder contact.
   - question: Hoe gaan jullie om met de landelijke richtlijnen m.b.t. afstand houden
       en thuiswerken?
     answer: Ons team werkt volgens de meest recente landelijke richtlijnen met
