@@ -4,9 +4,13 @@ introduction:
   subtitle: Our mission
   brand: OperationAIR
   mission: Assist in respiration
-  text: Our student team of the TU Delft has developed an easy producible
-    emergency ventilator, the AIRone, that can be used when shortage occurs due
-    to the coronavirus pandemic.
+  text: >-
+    Our student team of the TU Delft has developed an easy producible emergency
+    ventilator, the AIRone, that can be used when shortage occurs due to the
+    coronavirus pandemic.
+
+
+    Update May 25th 2020: OperationAIR is no longer operational.
   button1:
     title: Our approach
     link: /en/about
