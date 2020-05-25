@@ -4,9 +4,13 @@ introduction:
   subtitle: Onze missie
   brand: OperationAIR
   mission: Assist in respiration
-  text: Ons studententeam van de TU Delft heeft een snel te produceren
+  text: >-
+    Ons studententeam van de TU Delft heeft een snel te produceren
     noodbeademingsapparaat ontwikkeld, de AIRone, die ingezet kan worden bij
-    eventuele tekorten ten gevolge van het coronavirus.
+    eventuele tekorten ten gevolge van het coronavirus. 
+
+
+    Update 25 mei 2020: OperationAIR is niet meer operationeel.
   button1:
     title: Onze aanpak
     link: /over
