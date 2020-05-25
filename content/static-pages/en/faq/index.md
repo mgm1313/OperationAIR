@@ -36,12 +36,6 @@ questions:
       our design and documentation is open source available for use in other
       countries via this [website](https://osf.io/mn7xq/). In addition, we offer
       support to other initiatives worldwide.
-  - question: I want to help, how can I contribute?
-    answer: We are flattered by the amount of support offers. To maintain an
-      overview of the offered help and suggestions, we would like to ask you to
-      fill out the form via the link below. We then may contact you or you
-      organisation for help! For international inquiries please contact
-      [info@operationair.org](mailto:info@operationair.org)
   - question: How do you act on national guidelines and advice regarding infection
       prevention, social distancing and working from home?
     answer: Our team operates conform the national guidelines against the spread of
