@@ -2,7 +2,7 @@
 date: 2020-06-08T11:36:46.860Z
 title: OperationAIR is looking for a partner for further development and
   international distribution
-featuredImg: /assets/dsc_0028.jpg
+featuredImg: /assets/_dsc5348.jpg
 ---
 Approximately two months ago our student team started with the goal to prevent potential shortages of ventilators that could occur in the Netherlands due to COVID-19. After designing a rapidly manufacturable emergency ventilator, the AIRone, we were ready to start production if necessary. Fortunately, the need for ventilators in the Netherlands has decreased. Therefore, it is unlikely that our ventilators will be needed on the ICUs at short notice.
 
