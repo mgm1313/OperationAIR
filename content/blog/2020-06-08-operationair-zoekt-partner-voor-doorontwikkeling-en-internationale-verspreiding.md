@@ -1,7 +1,7 @@
 ---
 date: 2020-06-08T11:31:22.048Z
 title: OperationAIR zoekt partner voor doorontwikkeling en internationale verspreiding
-featuredImg: /assets/dsc_0028.jpg
+featuredImg: /assets/_dsc5348.jpg
 ---
 Iets meer dan twee maanden geleden is ons studententeam begonnen met het doel potentiële tekorten aan beademingsapparatuur in Nederland door COVID-19 te voorkomen. Met het ontwerpen van een makkelijk opschaalbaar beademingsapparaat, de AIRone, stonden wij klaar om productie te starten als de tekorten werkelijkheid werden. Gelukkig is de noodzaak in Nederland enorm gedaald en is het onwaarschijnlijk dat onze apparaten op korte termijn nodig zullen zijn op de IC’s.\
 \
